@@ -1,2 +1,15 @@
 .DS_Store
 *.db
+
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env*.local
+.vercel
+next-env.d.ts
+*.tsbuildinfo
+
+# raw bible files are uploaded to Vercel Blob, not shipped with the deploy
+assets/bibles/
