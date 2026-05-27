@@ -1,6 +1,5 @@
 import manifest from "@/assets/manifest.json";
 
-export const runtime = "edge";
 export const dynamic = "force-static";
 
 const body = JSON.stringify(manifest);
