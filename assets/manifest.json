@@ -1,0 +1,4468 @@
+{
+  "$schema": "./manifest.schema.json",
+  "schema_version": "1.0.0",
+  "name": "Lighthouse Bible Database Collection",
+  "description": "A curated collection of SQLite-format Bible texts in 42 languages, aggregated from open sources and identified by deterministic UUIDs derived from each file's SHA-256. Consumers resolve file paths relative to this manifest's URL.",
+  "generated_at": "2026-05-27T14:15:05Z",
+  "stats": {
+    "bibles": 107,
+    "languages": 42,
+    "total_bytes": 720992256
+  },
+  "languages": [
+    "Afrikaans",
+    "Albanian",
+    "Arabic",
+    "Bengali",
+    "Chinese",
+    "Czech",
+    "Dutch",
+    "English",
+    "Finnish",
+    "French",
+    "German",
+    "Greek",
+    "Gujarati",
+    "Hebrew",
+    "Hindi",
+    "Hungarian",
+    "Indonesian",
+    "Italian",
+    "Japanese",
+    "Kannada",
+    "Korean",
+    "Malayalam",
+    "Maori",
+    "Nepali",
+    "Oriya",
+    "Persian",
+    "Polish",
+    "Portuguese",
+    "Punjabi",
+    "Romanian",
+    "Russian",
+    "Sepedi",
+    "Spanish",
+    "Swahili",
+    "Tagalog",
+    "Tamil",
+    "Telugu",
+    "Thai",
+    "Turkish",
+    "Vietnamese",
+    "Xhosa",
+    "Zulu"
+  ],
+  "sources": [
+    {
+      "id": "kernelguardian-bible-databases",
+      "name": "kernelguardian/bible-databases",
+      "url": "https://github.com/kernelguardian/bible-databases",
+      "description": "English-language Bible SQLite databases aggregated from scrollmapper, OpenSong, Berean Bible, and VerseVIEW."
+    },
+    {
+      "id": "kernelguardian-multilingual",
+      "name": "kernelguardian/Bible-Database",
+      "url": "https://github.com/kernelguardian/Bible-Database",
+      "description": "Multilingual Bible databases (Wordproject lineage) across 17 languages."
+    },
+    {
+      "id": "lighthouse-bibles-main",
+      "name": "lighthouse-bibles-main",
+      "description": "Bundle of SQLite Bibles spanning classical translations, Strong's-numbered editions, and modern revisions across 40+ languages."
+    }
+  ],
+  "bibles": [
+    {
+      "id": "fc97e533-bb2f-0706-18f1-f49f4f6d9441",
+      "language": "Afrikaans",
+      "translation": {
+        "name": "Ou Afrikaanse Vertaling (Old Afrikaans Translation, 1933/1953)",
+        "key": "afr_oav_1953",
+        "year_published": 1933,
+        "year_revision": 1953,
+        "publisher": "Bybelgenootskap van Suid-Afrika",
+        "description": "First complete Afrikaans Bible, translated from Hebrew and Greek by J.D. du Toit, E.E. van Rooyen, J.D. Kestell, H.C.M. Fourie, and B.B. Keet. Published 1933, revised 1953; formal-equivalence style similar to the Statenvertaling and KJV."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/fc97e533-bb2f-0706-18f1-f49f4f6d9441.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 5100544,
+        "sha256": "fc97e533bb2f070618f1f49f4f6d9441438ac068e5f1b1182c638ebff12b7154"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In die begin het God die hemel en die aarde geskape.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Afrikaans/holybible.db"
+      }
+    },
+    {
+      "id": "9cf3b138-8269-ebc4-8381-e31a845215db",
+      "language": "Afrikaans",
+      "translation": {
+        "name": "Ou Afrikaanse Vertaling (Old Afrikaans Translation, 1933/1953)",
+        "key": "afr_oav_1953",
+        "year_published": 1933,
+        "year_revision": 1953,
+        "publisher": "Bybelgenootskap van Suid-Afrika",
+        "description": "First complete Afrikaans Bible, translated from Hebrew and Greek by J.D. du Toit, E.E. van Rooyen, J.D. Kestell, H.C.M. Fourie, and B.B. Keet. Published 1933, revised 1953; formal-equivalence style similar to the Statenvertaling and KJV."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9cf3b138-8269-ebc4-8381-e31a845215db.db",
+        "original_filename": "Afrikaans-1953.db",
+        "format": "sqlite3",
+        "size_bytes": 4698112,
+        "sha256": "9cf3b1388269ebc48381e31a845215dbd7a5b04025b19bbead07de2e8860c0ec"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31203,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In die begin het God die hemel en die aarde geskape.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "9cdaea9c-19ff-e61d-4ef7-a0665626755b",
+      "language": "Albanian",
+      "translation": {
+        "name": "Bibla Shqip (Kristoforidhi Albanian Bible)",
+        "key": "sq_kristoforidhi",
+        "year_published": 1872,
+        "year_revision": 1884,
+        "publisher": "British and Foreign Bible Society",
+        "description": "Albanian Bible by Konstandin Kristoforidhi, published by BFBS in Tosk and Gheg dialects (1872-1884); foundational Albanian biblical text.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Bible_translations_into_Albanian"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9cdaea9c-19ff-e61d-4ef7-a0665626755b.db",
+        "original_filename": "Albanian Shqip.db",
+        "format": "sqlite3",
+        "size_bytes": 4915200,
+        "sha256": "9cdaea9c19ffe61d4ef7a0665626755be9fad4c2872df1be029a74d8d2039135"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Në fillim Perëndia krijoi qiejt dhe tokën.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "301cab51-7fdd-3f41-ff2f-ab11e7ca3d7b",
+      "language": "Arabic",
+      "translation": {
+        "name": "Smith-Van Dyke Arabic Bible (الكتاب المقدس)",
+        "key": "smith_van_dyke",
+        "year_published": 1865,
+        "publisher": "American Bible Society / Syrian Mission Press, Beirut",
+        "description": "Completed 1865 by Eli Smith and Cornelius Van Dyck; the most widely used Arabic Protestant Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/301cab51-7fdd-3f41-ff2f-ab11e7ca3d7b.db",
+        "original_filename": "Smith Van Dyke.db",
+        "format": "sqlite3",
+        "size_bytes": 4808704,
+        "sha256": "301cab517fdd3f41ff2fab11e7ca3d7bbd69b26aba1ec86155c340e323712db2"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "في البدء خلق الله السموات والارض.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "2e1e4f63-a685-fcdf-2420-c94d1ce8f3fa",
+      "language": "Bengali",
+      "translation": {
+        "name": "Bengali Common Language Bible (Carey/BFBS lineage)",
+        "key": "ben_carey",
+        "year_published": 1809,
+        "year_revision": 1909,
+        "publisher": "British and Foreign Bible Society / Bible Society of India (Serampore Mission Press, William Carey)",
+        "description": "Originally translated by William Carey and the Serampore missionaries; complete Bengali Bible first published 1809 and revised by BFBS. The Wordproject Bengali edition reflects this classic public-domain Bengali Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/2e1e4f63-a685-fcdf-2420-c94d1ce8f3fa.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 15118336,
+        "sha256": "2e1e4f63a685fcdf2420c94d1ce8f3fa256124ca8d8186194d7c56f1fd807396"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31101,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "শুরুতে, ঈশ্বর আকাশ ও পৃথিবী সৃষ্টি করলেন| প্রথমে পৃথিবী সম্পূর্ণ শূন্য ছিল; পৃথিবীতে কিছুই ছিল না|",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Bengali/holybible.db"
+      }
+    },
+    {
+      "id": "2ab7f86a-8973-f264-340f-2b3d406c03a1",
+      "language": "Bengali",
+      "translation": {
+        "name": "Bengali Common Language Bible (Carey/BFBS lineage)",
+        "key": "ben_carey",
+        "year_published": 1809,
+        "year_revision": 1909,
+        "publisher": "British and Foreign Bible Society / Bible Society of India (Serampore Mission Press, William Carey)",
+        "description": "Originally translated by William Carey and the Serampore missionaries; complete Bengali Bible first published 1809 and revised by BFBS. The Wordproject Bengali edition reflects this classic public-domain Bengali Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/2ab7f86a-8973-f264-340f-2b3d406c03a1.db",
+        "original_filename": "Bengali.db",
+        "format": "sqlite3",
+        "size_bytes": 12402688,
+        "sha256": "2ab7f86a8973f264340f2b3d406c03a1fce0a2b8669ec117d4f93359f6579314"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31101,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "শুরুতে, ঈশ্বর আকাশ ও পৃথিবী সৃষ্টি করলেন| প্রথমে পৃথিবী সম্পূর্ণ শূন্য ছিল; পৃথিবীতে কিছুই ছিল না|",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "cd7c9726-7bc7-60ea-bbb5-9d7855067951",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese King James Version (Simplified, Shang-Di Edition)",
+        "key": "ckjv-sd-simp",
+        "year_published": 2011,
+        "publisher": "Independent / community translation projects",
+        "description": "Chinese rendering aligned with the English KJV using 上帝 (Shang-Di) for God rather than 神 (Shen). Reflects KJV's Textus Receptus textual basis.",
+        "script": "Simplified"
+      },
+      "license": {
+        "name": "Public Domain (KJV-based)",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/cd7c9726-7bc7-60ea-bbb5-9d7855067951.db",
+        "original_filename": "Chinese KJV (Simplified) Shang-Di.db",
+        "format": "sqlite3",
+        "size_bytes": 3809280,
+        "sha256": "cd7c97267bc760eabbb59d7855067951ecd149e5dbb795566b9ed48d0e49c0c5"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ 起初，　上帝创造天地。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "4d7d5480-cd5b-66b1-8f1a-23fa947d3ae0",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese King James Version (Traditional, Shang-Di Edition)",
+        "key": "ckjv-sd-trad",
+        "year_published": 2011,
+        "publisher": "Independent / community translation projects",
+        "description": "Traditional-script Chinese rendering aligned with the English KJV using 上帝 (Shang-Di) for God.",
+        "script": "Traditional"
+      },
+      "license": {
+        "name": "Public Domain (KJV-based)",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/4d7d5480-cd5b-66b1-8f1a-23fa947d3ae0.db",
+        "original_filename": "Chinese KJV (Traditional) Shang-Di.db",
+        "format": "sqlite3",
+        "size_bytes": 3809280,
+        "sha256": "4d7d5480cd5b66b18f1a23fa947d3ae0ee89c797d3d1f44cd8af0a2ecc1e0dbb"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ 起初，　上帝創造天地。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "5a82ae3a-812e-d71a-fa42-1c48440da154",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese Union Version (Simplified) 和合本简体",
+        "key": "cuv-simp",
+        "year_published": 1919,
+        "year_revision": 1988,
+        "publisher": "China Christian Council / Hong Kong Bible Society",
+        "description": "The dominant Protestant Chinese Bible, first published 1919 in simplified script. Available in both Shen (神) and Shang-Di (上帝) editions.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Union_Version",
+        "script": "Simplified"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/5a82ae3a-812e-d71a-fa42-1c48440da154.db",
+        "original_filename": "Chinese Union (Simplified).db",
+        "format": "sqlite3",
+        "size_bytes": 4780032,
+        "sha256": "5a82ae3a812ed71afa421c48440da154d805919513b054046dc189c3d67f7e74"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "起 初 ， 　 神 创 造 天 地 。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "3e4878b4-4fde-aa2c-7c87-a5a0ebde273e",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese Union Version (Traditional) 和合本繁體",
+        "key": "cuv-trad",
+        "year_published": 1919,
+        "year_revision": 1988,
+        "publisher": "Hong Kong Bible Society",
+        "description": "Traditional-script edition of the 1919 Chinese Union Version, standard Protestant Bible in Taiwan, Hong Kong, and overseas Chinese churches.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Union_Version",
+        "script": "Traditional"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/3e4878b4-4fde-aa2c-7c87-a5a0ebde273e.db",
+        "original_filename": "Chinese Union (Traditional).db",
+        "format": "sqlite3",
+        "size_bytes": 4780032,
+        "sha256": "3e4878b44fdeaa2c7c87a5a0ebde273edaa1044ee2ac525002dd2fbd3ad871a7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "起 初 ， 　 神 創 造 天 地 。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "3e7c32aa-474e-eba7-076a-17ad28151a0e",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese Union Version with Strong's (Simplified) 和合本简体 + Strong",
+        "key": "cuvs-strongs-simp",
+        "year_published": 1919,
+        "publisher": "Hong Kong Bible Society / community tagging projects",
+        "description": "Simplified-script CUV tagged with Strong's numbers linking words to Hebrew and Greek lexical entries.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Union_Version",
+        "script": "Simplified"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/3e7c32aa-474e-eba7-076a-17ad28151a0e.db",
+        "original_filename": "Chinese Union Version 和合本 - Simplified with Strong's numbers.db",
+        "format": "sqlite3",
+        "size_bytes": 6029312,
+        "sha256": "3e7c32aa474eeba7076a17ad28151a0edbb59a600b6472aebca3ec4ecf60af10"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31100,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ 起初{H7225}，　神{H430}创造{H1254}天{H8064}地{H776}。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d328d1ba-f178-e46d-24a4-bf0a274a81d5",
+      "language": "Chinese",
+      "translation": {
+        "name": "Chinese Union Version with Strong's (Traditional) 和合本繁體 + Strong",
+        "key": "cuvs-strongs-trad",
+        "year_published": 1919,
+        "publisher": "Hong Kong Bible Society / community tagging projects",
+        "description": "Traditional-script CUV annotated with Strong's numbers for cross-referencing Hebrew and Greek lexicons.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Union_Version",
+        "script": "Traditional"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/d328d1ba-f178-e46d-24a4-bf0a274a81d5.db",
+        "original_filename": "Chinese Union Version 和合本 - Traditional with Strong's numbers.db",
+        "format": "sqlite3",
+        "size_bytes": 6029312,
+        "sha256": "d328d1baf178e46d24a4bf0a274a81d55f2e5d46c6665a76a14ee4f725b73f26"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31100,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ 起初{H7225}，　神{H430}創造{H1254}天{H8064}地{H776}。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7209004d-9cad-0d40-7416-24c30957dbbc",
+      "language": "Czech",
+      "translation": {
+        "name": "Bible kralická",
+        "key": "kralicka",
+        "year_published": 1593,
+        "year_revision": 1613,
+        "publisher": "Unity of the Brethren (Jednota bratrská), Kralice nad Oslavou",
+        "description": "First complete Czech Bible from original languages, translated by the Unity of the Brethren and printed in Kralice between 1579 and 1593; the 1613 one-volume revision became the standard Czech Protestant text.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Bible_of_Kralice"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/7209004d-9cad-0d40-7416-24c30957dbbc.db",
+        "original_filename": "Bible Kralicka.db",
+        "format": "sqlite3",
+        "size_bytes": 4440064,
+        "sha256": "7209004d9cad0d40741624c30957dbbccd6582a325af80125ea4600d2318c476"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Na počátku stvořil Bůh nebe a zemi.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "9923705f-d438-c9e9-7213-1def4c7ae4c6",
+      "language": "Dutch",
+      "translation": {
+        "name": "Statenvertaling (Jongbloed-editie 1888)",
+        "key": "statenvertaling",
+        "year_published": 1637,
+        "year_revision": 1888,
+        "publisher": "Gebroeders Jongbloed, Leeuwarden",
+        "description": "First Dutch Bible translated directly from Hebrew, Aramaic, and Greek; commissioned by the Synod of Dordrecht (1637). The 1888 Jongbloed edition is the orthographically updated text commonly redistributed digitally.",
+        "wikipedia_url": "https://nl.wikipedia.org/wiki/Statenvertaling"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9923705f-d438-c9e9-7213-1def4c7ae4c6.db",
+        "original_filename": "Staten Vertaling.db",
+        "format": "sqlite3",
+        "size_bytes": 4894720,
+        "sha256": "9923705fd438c9e972131def4c7ae4c6b63b77aface48d7a9ea55834ebaaa8cb"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In den beginne schiep God den hemel en de aarde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "f25eef5c-7ce0-bcd6-3783-40fef02179e9",
+      "language": "English",
+      "translation": {
+        "name": "American King James Version",
+        "abbreviation": "AKJV",
+        "key": "AKJV",
+        "year_published": 1999,
+        "publisher": "Michael Peter (Stone) Engelbrite",
+        "description": "A word-for-word update of the King James Version (1769 Blayney edition) replacing archaic words with modern English equivalents while preserving the Textus Receptus-based text. Released into the public domain by its editor in 1999.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/American_King_James_Version"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/f25eef5c-7ce0-bcd6-3783-40fef02179e9.db",
+        "original_filename": "AKJVBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4636672,
+        "sha256": "f25eef5c7ce0bcd6378340fef02179e9edfcb34fbfcb0450fda2cad50ce4dc4e"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31037,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/AKJVBible_Database.db"
+      }
+    },
+    {
+      "id": "7ac96ad5-3f7d-0d1a-5b6b-249b2df58ea6",
+      "language": "English",
+      "translation": {
+        "name": "American Standard Version",
+        "abbreviation": "ASV",
+        "key": "ASV",
+        "year_published": 1901,
+        "publisher": "Thomas Nelson & Sons",
+        "description": "An American revision of the English Revised Version (1881-1885), formal-equivalence translation based on the Masoretic Text and a critical Greek NT. Textual basis for the RSV, NASB, and WEB.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/American_Standard_Version"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/7ac96ad5-3f7d-0d1a-5b6b-249b2df58ea6.db",
+        "original_filename": "ASVBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9560064,
+        "sha256": "7ac96ad53f7d0d1a5b6b249b2df58ea6a25702079a0f975fc881311665e072fd"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/ASVBible_Database.db"
+      }
+    },
+    {
+      "id": "8c8341d5-3fed-f44b-ac6a-55c6412dd097",
+      "language": "English",
+      "translation": {
+        "name": "American Standard Version",
+        "abbreviation": "ASV",
+        "key": "ASV",
+        "year_published": 1901,
+        "publisher": "Thomas Nelson & Sons",
+        "description": "An American revision of the English Revised Version (1881-1885), formal-equivalence translation based on the Masoretic Text and a critical Greek NT. Textual basis for the RSV, NASB, and WEB.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/American_Standard_Version"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/8c8341d5-3fed-f44b-ac6a-55c6412dd097.db",
+        "original_filename": "American Standard Version (1901).db",
+        "format": "sqlite3",
+        "size_bytes": 4718592,
+        "sha256": "8c8341d53fedf44bac6a55c6412dd097ff716d3ff884df8edec119c7fe61b67c"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "47794ec2-1f85-0150-5b21-f5c2eaa86add",
+      "language": "English",
+      "translation": {
+        "name": "American Standard Version (1901) with Strong's Numbers",
+        "key": "ASV_Strongs",
+        "year_published": 1901,
+        "publisher": "Thomas Nelson & Sons (ASV); Strong's numbering by James Strong (1890)",
+        "description": "1901 ASV with each English word keyed to Strong's concordance numbers. ASV entered the public domain on 1 January 1957.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/American_Standard_Version"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://ebible.org/eng-asv/"
+      },
+      "file": {
+        "path": "bibles/47794ec2-1f85-0150-5b21-f5c2eaa86add.db",
+        "original_filename": "American Standard Version w Strong's.db",
+        "format": "sqlite3",
+        "size_bytes": 7249920,
+        "sha256": "47794ec21f8501505b21f5c2eaa86add5720a316ac4ab9df38fb29e2671e6494"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31086,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning{H7225} God{H430} created{H1254} the heavens{H8064} and{H853} the earth.{H776}",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7ffbbca3-2b60-2433-2bd2-dc0ed664338c",
+      "language": "English",
+      "translation": {
+        "name": "Amplified Bible",
+        "abbreviation": "AMP",
+        "key": "AMP",
+        "year_published": 1965,
+        "year_revision": 2015,
+        "publisher": "The Lockman Foundation",
+        "description": "An English translation by The Lockman Foundation that expands the text with bracketed amplifications, synonyms, and explanatory notes to convey multiple shades of meaning from the original languages. First published 1965, major revision 2015.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Amplified_Bible"
+      },
+      "license": {
+        "name": "Lockman Foundation Proprietary",
+        "status": "copyrighted",
+        "url": "https://www.lockman.org/permission-to-quote-copyright/"
+      },
+      "file": {
+        "path": "bibles/7ffbbca3-2b60-2433-2bd2-dc0ed664338c.db",
+        "original_filename": "AMPBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 5283840,
+        "sha256": "7ffbbca32b6024332bd2dc0ed664338ca73386afa148e0a5d0b674bda3e15cf2"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31100,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "IN THE beginning God (prepared, formed, fashioned, and) created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/AMPBible_Database.db"
+      }
+    },
+    {
+      "id": "68126185-1c03-212c-51e2-6bcaf0f5bb67",
+      "language": "English",
+      "translation": {
+        "name": "Amplified Bible",
+        "abbreviation": "AMP",
+        "key": "AMP",
+        "year_published": 1965,
+        "year_revision": 2015,
+        "publisher": "The Lockman Foundation",
+        "description": "An English translation by The Lockman Foundation that expands the text with bracketed amplifications, synonyms, and explanatory notes to convey multiple shades of meaning from the original languages. First published 1965, major revision 2015.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Amplified_Bible"
+      },
+      "license": {
+        "name": "Lockman Foundation Proprietary",
+        "status": "copyrighted",
+        "url": "https://www.lockman.org/permission-to-quote-copyright/"
+      },
+      "file": {
+        "path": "bibles/68126185-1c03-212c-51e2-6bcaf0f5bb67.db",
+        "original_filename": "Amplified.db",
+        "format": "sqlite3",
+        "size_bytes": 5283840,
+        "sha256": "681261851c03212c51e26bcaf0f5bb67e9cecaac89e981f9313f56f3a7707b4d"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31100,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "IN THE beginning God (prepared, formed, fashioned, and) created the heavens and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "4d9af7aa-3273-f124-c048-5c409dd78df2",
+      "language": "English",
+      "translation": {
+        "name": "Berean Standard Bible",
+        "abbreviation": "BSB",
+        "key": "BSB",
+        "year_published": 2016,
+        "year_revision": 2022,
+        "publisher": "Bible Hub / Berean Bible",
+        "description": "Modern English translation by Bible Hub using formal-equivalence methodology, translated directly from Greek, Hebrew, and Aramaic. Renamed from Berean Study Bible and released into the public domain in 2022.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Berean_Study_Bible"
+      },
+      "license": {
+        "name": "Public Domain (CC0 1.0 Universal)",
+        "status": "public_domain",
+        "url": "https://berean.bible/licensing.htm"
+      },
+      "file": {
+        "path": "bibles/4d9af7aa-3273-f124-c048-5c409dd78df2.db",
+        "original_filename": "BSBBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4427776,
+        "sha256": "4d9af7aa3273f124c0485c409dd78df289bae126ed0fecb4f19787aba348dd8d"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/BSBBible_Database.db"
+      }
+    },
+    {
+      "id": "9461b470-fcde-006f-4175-b4e99ab2af1c",
+      "language": "English",
+      "translation": {
+        "name": "Bible in Basic English",
+        "abbreviation": "BBE",
+        "key": "BBE",
+        "year_published": 1949,
+        "year_revision": 1965,
+        "publisher": "Cambridge University Press",
+        "description": "English translation by Prof. S. H. Hooke using a limited vocabulary of ~1,000 basic English words for readers with limited English proficiency. NT 1941, complete 1949, revised 1965.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Bible_in_Basic_English"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9461b470-fcde-006f-4175-b4e99ab2af1c.db",
+        "original_filename": "BBEBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9625600,
+        "sha256": "9461b470fcde006f4175b4e99ab2af1c8bce50ac921f88bc698be0e06731c6dc"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "At the first God made the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/BBEBible_Database.db"
+      }
+    },
+    {
+      "id": "843f2a0b-f539-4861-df32-a05e6b72965e",
+      "language": "English",
+      "translation": {
+        "name": "Darby Bible",
+        "abbreviation": "DBY",
+        "key": "DBY",
+        "year_published": 1890,
+        "year_revision": 1890,
+        "publisher": "G. Morrish (original)",
+        "description": "Literal translation from Hebrew and Greek by John Nelson Darby, leader of the Plymouth Brethren. NT 1867 (revised 1872, 1884); complete Bible published posthumously in 1890.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Darby_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/843f2a0b-f539-4861-df32-a05e6b72965e.db",
+        "original_filename": "DBYBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9482240,
+        "sha256": "843f2a0bf5394861df32a05e6b72965e625fbb5fefa40413ee223fbacd751ae5"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31099,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/DBYBible_Database.db"
+      }
+    },
+    {
+      "id": "e59ef864-d2a6-7e13-b91b-61d3f4feee25",
+      "language": "English",
+      "translation": {
+        "name": "English Standard Version",
+        "abbreviation": "ESV",
+        "key": "ESV",
+        "year_published": 2001,
+        "year_revision": 2016,
+        "publisher": "Crossway",
+        "description": "Essentially-literal (formal-equivalence) translation derived from the 1971 RSV, produced by an evangelical committee led by J. I. Packer. Revisions 2007, 2011, 2016.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/English_Standard_Version"
+      },
+      "license": {
+        "name": "Crossway Proprietary (limited free use permitted)",
+        "status": "copyrighted",
+        "url": "https://www.crossway.org/permissions/"
+      },
+      "file": {
+        "path": "bibles/e59ef864-d2a6-7e13-b91b-61d3f4feee25.db",
+        "original_filename": "ESVBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4476928,
+        "sha256": "e59ef864d2a67e13b91b61d3f4feee2513255fc6b699c1136aa67da3c4ce7837"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31101,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning, God created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/ESVBible_Database.db"
+      }
+    },
+    {
+      "id": "e61b66dc-5325-eae5-a4c7-84997cb98277",
+      "language": "English",
+      "translation": {
+        "name": "English Standard Version",
+        "abbreviation": "ESV",
+        "key": "ESV",
+        "year_published": 2001,
+        "year_revision": 2016,
+        "publisher": "Crossway",
+        "description": "Essentially-literal (formal-equivalence) translation derived from the 1971 RSV, produced by an evangelical committee led by J. I. Packer. Revisions 2007, 2011, 2016.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/English_Standard_Version"
+      },
+      "license": {
+        "name": "Crossway Proprietary (limited free use permitted)",
+        "status": "copyrighted",
+        "url": "https://www.crossway.org/permissions/"
+      },
+      "file": {
+        "path": "bibles/e61b66dc-5325-eae5-a4c7-84997cb98277.db",
+        "original_filename": "ESV.db",
+        "format": "sqlite3",
+        "size_bytes": 4476928,
+        "sha256": "e61b66dc5325eae5a4c784997cb98277b4fea9e28cf93dace39018fccd214c98"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31101,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning, God created the heavens and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "0b999944-b98f-0544-1f18-5bc0db7023ac",
+      "language": "English",
+      "translation": {
+        "name": "Geneva Bible",
+        "abbreviation": "GEN",
+        "key": "GEN",
+        "year_published": 1560,
+        "year_revision": 1599,
+        "publisher": "Rowland Hall (Geneva)",
+        "description": "Early English translation by Protestant scholars exiled in Geneva under Mary I; first English Bible with verse divisions and marginal notes. The principal Bible of English Protestantism and the Puritans before the KJV.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/0b999944-b98f-0544-1f18-5bc0db7023ac.db",
+        "original_filename": "GENBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4747264,
+        "sha256": "0b999944b98f05441f185bc0db7023ac5882042ea84cf5ed86cc01b64aecd62b"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heauen and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/GENBible_Database.db"
+      }
+    },
+    {
+      "id": "db1e773f-d6d1-2279-eff7-d31242a3f45e",
+      "language": "English",
+      "translation": {
+        "name": "Geneva Bible",
+        "abbreviation": "GEN",
+        "key": "GEN",
+        "year_published": 1560,
+        "year_revision": 1599,
+        "publisher": "Rowland Hall (Geneva)",
+        "description": "Early English translation by Protestant scholars exiled in Geneva under Mary I; first English Bible with verse divisions and marginal notes. The principal Bible of English Protestantism and the Puritans before the KJV.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/db1e773f-d6d1-2279-eff7-d31242a3f45e.db",
+        "original_filename": "Geneva Bible (1587).db",
+        "format": "sqlite3",
+        "size_bytes": 4734976,
+        "sha256": "db1e773fd6d12279eff7d31242a3f45e153b368fee54a605aaa1c5e79c2b1abb"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heauen and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "754fcae9-6f7c-fbaa-7944-becd2144b1f6",
+      "language": "English",
+      "translation": {
+        "name": "King James Version (1769) with Strong's Numbers",
+        "key": "KJV_Strongs",
+        "year_published": 1769,
+        "publisher": "Oxford KJV base text; Strong's numbering by James Strong (1890); digital edition curated by CrossWire Bible Society",
+        "description": "1769 Oxford KJV with each English word cross-linked to James Strong's 1890 concordance numbers.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Strong%27s_Concordance"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://wiki.crosswire.org/CrossWire_KJV"
+      },
+      "file": {
+        "path": "bibles/754fcae9-6f7c-fbaa-7944-becd2144b1f6.db",
+        "original_filename": "kjv_strongs.db",
+        "format": "sqlite3",
+        "size_bytes": 8228864,
+        "sha256": "754fcae96f7cfbaa7944becd2144b1f68eadb5d19d812c5de5792bf96f996bb3"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning{H7225} God{H430} created{H1254}{(H8804)}{H853} the heaven{H8064} and{H853} the earth{H776}.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "fea14bf7-bc1e-e437-8715-e5f39151b051",
+      "language": "English",
+      "translation": {
+        "name": "King James Version (Authorized Version)",
+        "abbreviation": "KJV",
+        "key": "KJV",
+        "year_published": 1611,
+        "year_revision": 1769,
+        "publisher": "Church of England",
+        "description": "Commissioned in 1604 by King James I and completed in 1611 by 47 scholars working from the Masoretic Hebrew, Textus Receptus Greek, and earlier English translations. Modern text follows Blayney's 1769 Oxford revision.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/King_James_Version"
+      },
+      "license": {
+        "name": "Public Domain (Crown copyright in the UK)",
+        "status": "public_domain",
+        "url": "https://www.cambridge.org/about-us/who-we-are/queens-printers-patent"
+      },
+      "file": {
+        "path": "bibles/fea14bf7-bc1e-e437-8715-e5f39151b051.db",
+        "original_filename": "KJVBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9539584,
+        "sha256": "fea14bf7bc1ee4378715e5f39151b0518c23efc88bff2a98521d4f1c4f8e8fc9"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/KJVBible_Database.db"
+      }
+    },
+    {
+      "id": "95945cd4-b55f-187a-7436-db35c9f91a6c",
+      "language": "English",
+      "translation": {
+        "name": "King James Version (Authorized Version)",
+        "abbreviation": "KJV",
+        "key": "KJV_1611_1769",
+        "year_published": 1611,
+        "year_revision": 1769,
+        "publisher": "Church of England",
+        "description": "Commissioned in 1604 by King James I and completed in 1611 by 47 scholars working from the Masoretic Hebrew, Textus Receptus Greek, and earlier English translations. Modern text follows Blayney's 1769 Oxford revision.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/King_James_Version"
+      },
+      "license": {
+        "name": "Public Domain (Crown copyright in the UK)",
+        "status": "public_domain",
+        "url": "https://www.cambridge.org/about-us/who-we-are/queens-printers-patent"
+      },
+      "file": {
+        "path": "bibles/95945cd4-b55f-187a-7436-db35c9f91a6c.db",
+        "original_filename": "Authorized King James Version (1611-1769).db",
+        "format": "sqlite3",
+        "size_bytes": 4694016,
+        "sha256": "95945cd4b55f187a7436db35c9f91a6c11cb2012e1c21c4546d342a179e752cd"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "4163fe02-b6d8-ddd6-25dc-3f0088f6e0fd",
+      "language": "English",
+      "translation": {
+        "name": "King James Version (via Wordproject)",
+        "key": "eng_kjv_wordproject",
+        "year_published": 1611,
+        "year_revision": 1769,
+        "publisher": "Church of England; 1769 Oxford standard revision by Benjamin Blayney",
+        "description": "Wordproject-bundled copy of the Authorized King James Version (Genesis 1:1 matches the KJV line). First published 1611; standardized in the 1769 Oxford edition.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/King_James_Version"
+      },
+      "license": {
+        "name": "Public Domain (outside the UK)",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/4163fe02-b6d8-ddd6-25dc-3f0088f6e0fd.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 5089280,
+        "sha256": "4163fe02b6d8ddd625dc3f0088f6e0fd254cc725a3a731f82ea230cab46e6326"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/English/holybible.db"
+      }
+    },
+    {
+      "id": "8c708857-2b13-2956-18dd-d7bdc448a1e1",
+      "language": "English",
+      "translation": {
+        "name": "New American Standard Bible",
+        "abbreviation": "NASB",
+        "key": "NASB",
+        "year_published": 1971,
+        "year_revision": 2020,
+        "publisher": "The Lockman Foundation",
+        "description": "Formal-equivalence English translation derived from and updating the ASV (1901), from BHS (OT) and Nestle-Aland/UBS (NT). First complete 1971; major revisions 1995 and 2020.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/New_American_Standard_Bible"
+      },
+      "license": {
+        "name": "Lockman Foundation Proprietary",
+        "status": "copyrighted",
+        "url": "https://www.lockman.org/nasb-bible-info/"
+      },
+      "file": {
+        "path": "bibles/8c708857-2b13-2956-18dd-d7bdc448a1e1.db",
+        "original_filename": "NASBBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4599808,
+        "sha256": "8c7088572b13295618ddd7bdc448a1e184b334ab6e9e7cec8d4bc0ce222f629b"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/NASBBible_Database.db"
+      }
+    },
+    {
+      "id": "4569896b-9241-926a-a02c-6a028da7878b",
+      "language": "English",
+      "translation": {
+        "name": "New English Translation (NET Bible)",
+        "key": "NET",
+        "year_published": 2005,
+        "year_revision": 2019,
+        "publisher": "Biblical Studies Press, L.L.C.",
+        "description": "Modern English translation by 25 biblical scholars, beta 2001, first edition 2005. Distinguished by extensive translators' notes and a permissive ministry-first copyright policy.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/New_English_Translation"
+      },
+      "license": {
+        "name": "NET Bible Copyright License (free for most non-commercial use)",
+        "status": "copyrighted",
+        "url": "https://bible.org/permissions"
+      },
+      "file": {
+        "path": "bibles/4569896b-9241-926a-a02c-6a028da7878b.db",
+        "original_filename": "net.db",
+        "format": "sqlite3",
+        "size_bytes": 4698112,
+        "sha256": "4569896b9241926aa02c6a028da7878bfb72300c15f396723483d398293a648c"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31087,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ The Creation of the World In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "a736cbe9-6ec6-5419-dedb-4a31eae5984c",
+      "language": "English",
+      "translation": {
+        "name": "Scrivener's Textus Receptus (1894) - Parsed Greek New Testament",
+        "key": "TRparsed",
+        "year_published": 1894,
+        "publisher": "F. H. A. Scrivener (Cambridge UP); digital parsed edition (CrossWire/Bible-Discovery)",
+        "description": "Parsed digital edition of Scrivener's 1894 Greek Textus Receptus, with each Greek word tagged with morphological parsing and Strong's numbers.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Textus_Receptus"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "http://www.bible-discovery.com/bible-license-tr.php"
+      },
+      "file": {
+        "path": "bibles/a736cbe9-6ec6-5419-dedb-4a31eae5984c.db",
+        "original_filename": "trparsed.db",
+        "format": "sqlite3",
+        "size_bytes": 3801088,
+        "sha256": "a736cbe96ec65419dedb4a31eae5984c3b3207898c5526437cf59d9eb2fe3c30"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 7958,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "βιβλος G976 N-NSF γενεσεως G1078 N-GSF ιησου G2424 N-GSM χριστου G5547 N-GSM υιου G5207 N-GSM δαβιδ G1138 N-PRI υιου G5207 N-GSM αβρααμ G11 N-PRI",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "539d6fac-226d-2339-2597-4daa73c36356",
+      "language": "English",
+      "translation": {
+        "name": "The Bishops' Bible",
+        "key": "BishopsBible1568",
+        "year_published": 1568,
+        "year_revision": 1602,
+        "publisher": "Richard Jugge (Church of England), London",
+        "description": "English translation produced under the authority of the Church of England led by Archbishop Matthew Parker; its 1602 edition served as the base text for the King James Version.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Bishops%27_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/539d6fac-226d-2339-2597-4daa73c36356.db",
+        "original_filename": "Bishops Bible (1568).db",
+        "format": "sqlite3",
+        "size_bytes": 4796416,
+        "sha256": "539d6fac226d233925974daa73c36356776e888873238eb8bd862f22ff292232"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginnyng GOD created ye heauen and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "f5c89f2e-ebac-dab9-fb22-6a9e8c2195d8",
+      "language": "English",
+      "translation": {
+        "name": "The Coverdale Bible",
+        "key": "CoverdaleBible1535",
+        "year_published": 1535,
+        "year_revision": 1537,
+        "publisher": "Merten de Keyser, Antwerp",
+        "description": "Compiled by Myles Coverdale; first complete printed translation of the Bible into Modern English, drawing on Tyndale for the NT and Pentateuch and Latin/German sources elsewhere.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Coverdale_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/f5c89f2e-ebac-dab9-fb22-6a9e8c2195d8.db",
+        "original_filename": "Coverdale Bible (1535).db",
+        "format": "sqlite3",
+        "size_bytes": 4669440,
+        "sha256": "f5c89f2eebacdab9fb226a9e8c2195d8da85a41270089098d4096048f4dd4e2e"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In ye begynnynge God created heauen & earth:",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7358d86a-5ba4-aa0e-6e00-2f8c4f6a8931",
+      "language": "English",
+      "translation": {
+        "name": "The Message: The Bible in Contemporary Language",
+        "abbreviation": "MSG",
+        "key": "MSG",
+        "year_published": 1993,
+        "year_revision": 2018,
+        "publisher": "NavPress",
+        "description": "Idiomatic contemporary-English paraphrase by Eugene H. Peterson from Hebrew, Aramaic, and Greek source texts. NT 1993, complete 2002, numbered-edition revision 2018.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/The_Message_(Bible)"
+      },
+      "license": {
+        "name": "Copyrighted (NavPress / Eugene H. Peterson)",
+        "status": "copyrighted",
+        "url": "https://www.navpress.com/the-message-bible-permissions/"
+      },
+      "file": {
+        "path": "bibles/7358d86a-5ba4-aa0e-6e00-2f8c4f6a8931.db",
+        "original_filename": "MSGBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4526080,
+        "sha256": "7358d86a5ba4aa0e6e002f8c4f6a89317e5a31c88150c9d7e5fa1217b7d456c0"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31022,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "First this: God created the Heavens and Earth--all you see, all you don't see.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/MSGBible_Database.db"
+      }
+    },
+    {
+      "id": "2f45fe81-ac8b-a676-b118-b46d51872d7c",
+      "language": "English",
+      "translation": {
+        "name": "Tyndale Bible (Tyndale New Testament)",
+        "key": "TyndaleBible",
+        "year_published": 1526,
+        "year_revision": 1534,
+        "publisher": "Peter Schoeffer the Younger, Worms (1526); later editions Antwerp",
+        "description": "William Tyndale's pioneering English translation of the NT from Greek (1526, revised 1534) and portions of the OT from Hebrew; the first printed English New Testament.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Tyndale_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/2f45fe81-ac8b-a676-b118-b46d51872d7c.db",
+        "original_filename": "Tyndale.db",
+        "format": "sqlite3",
+        "size_bytes": 1978368,
+        "sha256": "2f45fe81ac8ba676b118b46d51872d7c292b4fb95a149fcbf6888010e55ae97a"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 13928,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the begynnynge God created heaven and erth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "28e739ee-e894-f0ee-d332-46aeb5d5364b",
+      "language": "English",
+      "translation": {
+        "name": "Updated King James Version",
+        "abbreviation": "UKJV",
+        "key": "UKJV",
+        "year_published": 2000,
+        "publisher": "Independent (public domain release)",
+        "description": "Light modernization of the 1611/1769 KJV (completed 25 Dec 2000) retaining the Textus Receptus base and KJV phrasing while updating archaic vocabulary and pronouns. Released into the public domain."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://www.stepbible.org/version.jsp?version=UKJV"
+      },
+      "file": {
+        "path": "bibles/28e739ee-e894-f0ee-d332-46aeb5d5364b.db",
+        "original_filename": "UKJVBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 4714496,
+        "sha256": "28e739eee894f0eed33246aeb5d5364b68a5ec40586b230c1fdeddfcf2a961ad"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/UKJVBible_Database.db"
+      }
+    },
+    {
+      "id": "fdf30e1f-60fc-e480-4367-5c748a0b2435",
+      "language": "English",
+      "translation": {
+        "name": "Webster's Revision of the King James Bible",
+        "abbreviation": "WBT",
+        "key": "WBT",
+        "year_published": 1833,
+        "publisher": "Durrie & Peck",
+        "description": "Limited revision of the KJV by Noah Webster, primarily updating archaic vocabulary, grammar, and spelling to early 19th-century American English while preserving the Textus Receptus-based text.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Webster%27s_Revision"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/fdf30e1f-60fc-e480-4367-5c748a0b2435.db",
+        "original_filename": "WBTBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9510912,
+        "sha256": "fdf30e1f60fce48043675c748a0b24350470a0db4009275d6bbe207a917c9f25"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31106,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heaven and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/WBTBible_Database.db"
+      }
+    },
+    {
+      "id": "0bd79859-51fb-9ecc-4d4e-e54979c3f046",
+      "language": "English",
+      "translation": {
+        "name": "World English Bible",
+        "abbreviation": "WEB",
+        "key": "WEB",
+        "year_published": 2000,
+        "year_revision": 2020,
+        "publisher": "Rainbow Missions, Inc. / eBible.org",
+        "description": "Modern English translation derived from the 1901 ASV, updated using Biblia Hebraica Stuttgartensia (OT) and Majority Text (NT). Released into the public domain.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/World_English_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://worldenglish.bible/"
+      },
+      "file": {
+        "path": "bibles/0bd79859-51fb-9ecc-4d4e-e54979c3f046.db",
+        "original_filename": "WEBBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9363456,
+        "sha256": "0bd7985951fb9ecc4d4ee54979c3f0465443ff7f5cd0512eed07d40515d9494b"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God{After \\\"God,\\\" the Hebrew has the two letters \\\"Aleph Tav\\\" (the first and last letters of the Hebrew alphabet) as a grammatical marker.} created the heavens and the earth.",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/WEBBible_Database.db"
+      }
+    },
+    {
+      "id": "261602f4-d22c-1dba-eb6e-c9796e4ee027",
+      "language": "English",
+      "translation": {
+        "name": "World English Bible",
+        "abbreviation": "WEB",
+        "key": "WEB",
+        "year_published": 2000,
+        "year_revision": 2020,
+        "publisher": "Rainbow Missions, Inc. / eBible.org",
+        "description": "Modern English translation derived from the 1901 ASV, updated using Biblia Hebraica Stuttgartensia (OT) and Majority Text (NT). Released into the public domain.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/World_English_Bible"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://worldenglish.bible/"
+      },
+      "file": {
+        "path": "bibles/261602f4-d22c-1dba-eb6e-c9796e4ee027.db",
+        "original_filename": "web.db",
+        "format": "sqlite3",
+        "size_bytes": 4571136,
+        "sha256": "261602f4d22c1dbaeb6ec9796e4ee0279ad0d9924f6ca7d8f03f0630dc763cdf"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning God created the heavens and the earth.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "5c34b1d0-7c6d-99d8-3bac-11ffda36df0a",
+      "language": "English",
+      "translation": {
+        "name": "Young's Literal Translation",
+        "abbreviation": "YLT",
+        "key": "YLT",
+        "year_published": 1862,
+        "year_revision": 1898,
+        "publisher": "Robert Young (self-published); later Baker Book House",
+        "description": "Extremely literal formal-equivalence translation by Scottish scholar Robert Young, rendering Hebrew and Greek verb tenses and idioms word-for-word from the Masoretic Text and Textus Receptus. Third revised edition published posthumously in 1898.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Young%27s_Literal_Translation"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/5c34b1d0-7c6d-99d8-3bac-11ffda36df0a.db",
+        "original_filename": "YLTBible_Database.db",
+        "format": "sqlite3",
+        "size_bytes": 9605120,
+        "sha256": "5c34b1d07c6d99d83bac11ffda36df0a1fb786169373bd6bba4bfe6e9b97f97f"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "In the beginning of God's preparing the heavens and the earth --",
+      "source": {
+        "id": "kernelguardian-bible-databases",
+        "url": "https://github.com/kernelguardian/bible-databases/blob/master/DB/YLTBible_Database.db"
+      }
+    },
+    {
+      "id": "9cfd8004-8f4a-0098-0568-c95fcba1b542",
+      "language": "Finnish",
+      "translation": {
+        "name": "Biblia 1776 (Vuoden 1776 Kirkkoraamattu)",
+        "key": "finnish_1776",
+        "year_published": 1776,
+        "publisher": "Suomen kirkko (Church of Finland)",
+        "description": "Third official Finnish church Bible, authorized 1776 and the standard Finnish Bible until the 1933/1938 revision. Still used by some traditional Lutheran communities."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9cfd8004-8f4a-0098-0568-c95fcba1b542.db",
+        "original_filename": "Finnish 1776.db",
+        "format": "sqlite3",
+        "size_bytes": 4841472,
+        "sha256": "9cfd80048f4a00980568c95fcba1b542441c7a355135fbad576861cff3d7c3fa"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Alussa loi Jumala taivaan ja maan.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "12671397-cb54-b8a0-a008-a53e3f094d92",
+      "language": "French",
+      "translation": {
+        "name": "La Bible de l'Épée (2005)",
+        "key": "epee_2005",
+        "year_published": 2005,
+        "publisher": "Jean leDuc / Société Biblique de l'Épée",
+        "description": "French Bible by Jean leDuc based on the Ostervald revision and the Textus Receptus; a French equivalent of the KJV tradition."
+      },
+      "license": {
+        "name": "Free for non-commercial use",
+        "status": "permissive",
+        "url": "https://www.bibledelepee.org/"
+      },
+      "file": {
+        "path": "bibles/12671397-cb54-b8a0-a008-a53e3f094d92.db",
+        "original_filename": "La Bible de l'Épée (2005).db",
+        "format": "sqlite3",
+        "size_bytes": 4894720,
+        "sha256": "12671397cb54b8a0a008a53e3f094d92f47b79154e51f69c8fc35ce07b1ac45d"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Dieu, au commencement, créa les cieux et la terre;",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "1346d0ff-02b0-507d-1e35-c25c6b0fcf98",
+      "language": "French",
+      "translation": {
+        "name": "La Bible Ostervald (Version révisée 1996)",
+        "key": "ostervald_1996",
+        "year_published": 1744,
+        "year_revision": 1996,
+        "publisher": "La Bégude de Mazenc / Mission Baptiste Maranatha",
+        "description": "French Protestant Bible by Jean-Frédéric Ostervald (1744) as a revision of the Geneva Bible; the 1996 revision modernized the language while retaining the Textus Receptus base."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/1346d0ff-02b0-507d-1e35-c25c6b0fcf98.db",
+        "original_filename": "oster.db",
+        "format": "sqlite3",
+        "size_bytes": 4857856,
+        "sha256": "1346d0ff02b0507d1e35c25c6b0fcf9843a58be6ac09295b1639ac3a9b0d5185"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31172,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Au commencement, Dieu créa les cieux et la terre.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "a7cf5bbf-d92d-0140-ba40-5cbe36a458f5",
+      "language": "French",
+      "translation": {
+        "name": "La Sainte Bible, traduction de Louis Segond (1910)",
+        "key": "segond_1910",
+        "year_published": 1880,
+        "year_revision": 1910,
+        "publisher": "Société biblique britannique et étrangère",
+        "description": "Widely used French Protestant Bible by Swiss pastor Louis Segond, completed 1880 and revised 1910.",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Bible_Segond"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/a7cf5bbf-d92d-0140-ba40-5cbe36a458f5.db",
+        "original_filename": "segond_1910.db",
+        "format": "sqlite3",
+        "size_bytes": 4784128,
+        "sha256": "a7cf5bbfd92d0140ba405cbe36a458f5f922ed8e2ffd687eb7c1a426998a1efc"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Au commencement, Dieu créa les cieux et la terre.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "6f5616ef-9e3d-952a-3984-82e070f75d45",
+      "language": "French",
+      "translation": {
+        "name": "La Sainte Bible, version de David Martin (1744)",
+        "key": "martin_1744",
+        "year_published": 1707,
+        "year_revision": 1744,
+        "publisher": "Pierre Mortier (Amsterdam); revised by Pierre Roques",
+        "description": "French Protestant translation by David Martin (1707), revised 1744 by Pierre Roques. Based on the Geneva Bible tradition and the Textus Receptus.",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Bible_Martin"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/6f5616ef-9e3d-952a-3984-82e070f75d45.db",
+        "original_filename": "Martin (1744).db",
+        "format": "sqlite3",
+        "size_bytes": 5111808,
+        "sha256": "6f5616ef9e3d952a398482e070f75d45a84e9b60ed554e5f873d2d3bbec14fb7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Au commencement DIEU créa les cieux et la terre.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "de958eb0-10e4-c8c6-89f0-0d95034d1792",
+      "language": "German",
+      "translation": {
+        "name": "Elberfelder Bibel (1871)",
+        "key": "elberfelder_1871",
+        "year_published": 1871,
+        "publisher": "Brethren movement (Darby, Brockhaus, von Poseck)",
+        "description": "Original Elberfelder Bibel, literal German translation completed 1871 (NT 1855), known for close adherence to the Hebrew and Greek source texts.",
+        "wikipedia_url": "https://de.wikipedia.org/wiki/Elberfelder_Bibel"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/de958eb0-10e4-c8c6-89f0-0d95034d1792.db",
+        "original_filename": "Elberfelder (1871).db",
+        "format": "sqlite3",
+        "size_bytes": 5177344,
+        "sha256": "de958eb010e4c8c689f00d95034d1792dbee6d5fe625cb121eb4780f90de3325"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31072,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Im Anfang schuf Gott die Himmel(Im Hebr. steht das Wort\"Himmel\" immer in der Mehrzahl) und die Erde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "4aad225e-4980-44ed-6bec-ced9f182a01a",
+      "language": "German",
+      "translation": {
+        "name": "Elberfelder Bibel (1905 Revision)",
+        "key": "elberfelder_1905",
+        "year_published": 1871,
+        "year_revision": 1905,
+        "publisher": "R. Brockhaus Verlag, Elberfeld",
+        "description": "1905 revision of the Elberfelder ('Unrevidierte Elberfelder'), the standard public-domain Elberfelder text. Preserves the literal translation philosophy of the 1871 original with linguistic updates.",
+        "wikipedia_url": "https://de.wikipedia.org/wiki/Elberfelder_Bibel"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/4aad225e-4980-44ed-6bec-ced9f182a01a.db",
+        "original_filename": "Elberfelder (1905).db",
+        "format": "sqlite3",
+        "size_bytes": 4890624,
+        "sha256": "4aad225e498044ed6becced9f182a01a8f6c4231e62a7d6a66c5526b2d782f2e"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Im Anfang schuf Gott die Himmel und die Erde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "617403cc-c153-79a8-ae54-202b1ec8f6f7",
+      "language": "German",
+      "translation": {
+        "name": "Luther Bibel (1545)",
+        "key": "luther_1545",
+        "year_published": 1534,
+        "year_revision": 1545,
+        "publisher": "Hans Lufft, Wittenberg",
+        "description": "Martin Luther's complete German Bible; the 1545 'Ausgabe letzter Hand' is the final edition published during his lifetime. Foundational to German language and Protestant Reformation.",
+        "wikipedia_url": "https://de.wikipedia.org/wiki/Lutherbibel"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/617403cc-c153-79a8-ae54-202b1ec8f6f7.db",
+        "original_filename": "luther.db",
+        "format": "sqlite3",
+        "size_bytes": 4542464,
+        "sha256": "617403ccc15379a8ae54202b1ec8f6f7463680ee5b1581487af3deecb69a3b91"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Am Anfang schuf Gott Himmel und Erde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7dd72b45-49c0-d185-4b39-10ed3803db19",
+      "language": "German",
+      "translation": {
+        "name": "Lutherbibel 1912",
+        "key": "luther_1912",
+        "year_published": 1545,
+        "year_revision": 1912,
+        "publisher": "Deutsche Bibelgesellschaft / Württembergische Bibelanstalt",
+        "description": "1912 revision of the Lutherbibel, the last revision before modern updates; widely redistributed as public-domain. Modernizes spelling and vocabulary from the 1545 text.",
+        "wikipedia_url": "https://de.wikipedia.org/wiki/Lutherbibel"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/7dd72b45-49c0-d185-4b39-10ed3803db19.db",
+        "original_filename": "luther_1912.db",
+        "format": "sqlite3",
+        "size_bytes": 4653056,
+        "sha256": "7dd72b4549c0d1854b3910ed3803db190c8b69bd688cedea5f609db9752bdbf8"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Am Anfang schuf Gott Himmel und Erde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "44b5632e-6257-6a07-3398-7659385a3c1d",
+      "language": "German",
+      "translation": {
+        "name": "Schlachter Bibel (1951)",
+        "key": "schlachter_1951",
+        "year_published": 1905,
+        "year_revision": 1951,
+        "publisher": "Genfer Bibelgesellschaft",
+        "description": "1951 revision of Franz Eugen Schlachter's German translation (originally 1905). The most commonly redistributed public-domain Schlachter edition, predating the copyrighted Schlachter 2000.",
+        "wikipedia_url": "https://de.wikipedia.org/wiki/Schlachter-Bibel"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/44b5632e-6257-6a07-3398-7659385a3c1d.db",
+        "original_filename": "schlachter.db",
+        "format": "sqlite3",
+        "size_bytes": 4804608,
+        "sha256": "44b5632e62576a0733987659385a3c1db867cb62b003500d15a3d5304ee3c8a6"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Im Anfang schuf Gott den Himmel und die Erde.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "5ef7d66d-eb26-5de8-f2a2-da9ec1dab253",
+      "language": "Greek",
+      "translation": {
+        "name": "Textus Receptus (Stephanus 1550 / Scrivener 1894)",
+        "key": "textus_receptus",
+        "year_published": 1550,
+        "year_revision": 1894,
+        "publisher": "Robert Estienne (Stephanus) / F.H.A. Scrivener",
+        "description": "Greek New Testament text edited by Robert Estienne (Stephanus) in 1550 and refined by F.H.A. Scrivener (1881-1894) to reflect the readings underlying the KJV.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Textus_Receptus"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/5ef7d66d-eb26-5de8-f2a2-da9ec1dab253.db",
+        "original_filename": "Textus Receptus NT (1550-1884).db",
+        "format": "sqlite3",
+        "size_bytes": 1703936,
+        "sha256": "5ef7d66deb265de8f2a2da9ec1dab253932330483604ba550b72da2962969eb0"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 7958,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "βιβλος γενεσεως ιησου χριστου υιου δαβιδ υιου αβρααμ",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "51311f8e-9ff9-14fe-5066-c94e39c2ebec",
+      "language": "Gujarati",
+      "translation": {
+        "name": "Gujarati Old Version (Pavitra Bible)",
+        "key": "guj_ov",
+        "year_published": 1861,
+        "year_revision": 1908,
+        "publisher": "Bible Society of India (Irish Presbyterian and London Missionary missionaries)",
+        "description": "Classic Gujarati Old Version, complete Bible first published 1861 by missionaries including James Glasgow; revised in the early 20th century. The standard public-domain Gujarati Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/51311f8e-9ff9-14fe-5066-c94e39c2ebec.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 13654016,
+        "sha256": "51311f8e9ff914fe5066c94e39c2ebec41d8cbc74dbdcd5f1b61c855ad21404a"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "આરંભમાં દેવે આકાશ અને પૃથ્વીનું સર્જન કર્યું.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Gujarati/holybible.db"
+      }
+    },
+    {
+      "id": "12abece8-690e-7434-3736-959d14e040cb",
+      "language": "Gujarati",
+      "translation": {
+        "name": "Gujarati Old Version (Pavitra Bible)",
+        "key": "guj_ov",
+        "year_published": 1861,
+        "year_revision": 1908,
+        "publisher": "Bible Society of India (Irish Presbyterian and London Missionary missionaries)",
+        "description": "Classic Gujarati Old Version, complete Bible first published 1861 by missionaries including James Glasgow; revised in the early 20th century. The standard public-domain Gujarati Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/12abece8-690e-7434-3736-959d14e040cb.db",
+        "original_filename": "Gujarati.db",
+        "format": "sqlite3",
+        "size_bytes": 11329536,
+        "sha256": "12abece8690e74343736959d14e040cbcc87472fb70dc1a9bc973f041fa77766"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "આરંભમાં દેવે આકાશ અને પૃથ્વીનું સર્જન કર્યું.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "283975e5-f32d-16b9-aabb-eb914ebf4b89",
+      "language": "Hebrew",
+      "translation": {
+        "name": "Westminster Leningrad Codex (כתב יד לנינגרד)",
+        "key": "wlc",
+        "year_published": 1008,
+        "year_revision": 2016,
+        "publisher": "Westminster Theological Seminary / J. Alan Groves Center",
+        "description": "Digital transcription of the Leningrad Codex (1008 CE), the oldest complete manuscript of the Hebrew Bible; the standard critical Hebrew OT text in academic and software applications.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Leningrad_Codex"
+      },
+      "license": {
+        "name": "Public Domain (transcription)",
+        "status": "public_domain",
+        "url": "https://www.tanach.us/Pages/Technical.html"
+      },
+      "file": {
+        "path": "bibles/283975e5-f32d-16b9-aabb-eb914ebf4b89.db",
+        "original_filename": "WLC-Westminster Leningrad Codex.db",
+        "format": "sqlite3",
+        "size_bytes": 5373952,
+        "sha256": "283975e5f32d16b9aabbeb914ebf4b89623f8db4ba849026f901a10ee3f625b8"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 23213,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d7d091e5-88dd-37a5-6a31-cabf66ade5a4",
+      "language": "Hindi",
+      "translation": {
+        "name": "Hindi Old Version Bible (Pavitra Bible)",
+        "key": "hin_ov",
+        "year_published": 1818,
+        "year_revision": 1860,
+        "publisher": "Serampore Mission Press / British and Foreign Bible Society",
+        "description": "Classical Hindi Bible initially produced by William Carey and the Serampore missionaries, later revised by the Calcutta Auxiliary of the BFBS."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/d7d091e5-88dd-37a5-6a31-cabf66ade5a4.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 12322816,
+        "sha256": "d7d091e588dd37a56a31cabf66ade5a4ee26102c85fc8c024a03a58e8b766420"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31120,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "आदि में परमेश्वर ने आकाश और पृथ्वी की सृष्टि की।",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Hindi/holybible.db"
+      }
+    },
+    {
+      "id": "044b42c6-1776-1eaa-9a91-c896e744f82d",
+      "language": "Hindi",
+      "translation": {
+        "name": "Indian Revised Version (IRV)",
+        "key": "en_irv2017",
+        "year_published": 2017,
+        "year_revision": 2019,
+        "publisher": "Bridge Connectivity Solutions Pvt. Ltd. / Bible Society of India",
+        "description": "Revision of the World English Bible adapted for Indian English readers, released by Bridge Connectivity Solutions in 2017 with subsequent updates. CC BY-SA 4.0."
+      },
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "status": "permissive",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "file": {
+        "path": "bibles/044b42c6-1776-1eaa-9a91-c896e744f82d.db",
+        "original_filename": "Indian Revised Version (2017-2018).db",
+        "format": "sqlite3",
+        "size_bytes": 9703424,
+        "sha256": "044b42c617761eaa9a91c896e744f82d4fe3f1efd9fa20a11d8af6140b7168ed"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31105,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ आदि में परमेश्‍वर ने आकाश और पृथ्वी की सृष्टि की।",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "456b2287-a332-9bd1-826f-ed81de362006",
+      "language": "Hungarian",
+      "translation": {
+        "name": "Karoli Bible (Karoli Gaspar / Vizsolyi Biblia)",
+        "key": "hun_karoli",
+        "year_published": 1590,
+        "year_revision": 1908,
+        "publisher": "Karoli Gaspar; 1908 revision by the Hungarian Bible Society",
+        "description": "First complete Hungarian Bible, originally published 1590 in Vizsoly. The 1908 revised edition is the most commonly redistributed public-domain Hungarian Protestant Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/456b2287-a332-9bd1-826f-ed81de362006.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 4747264,
+        "sha256": "456b2287a3329bd1826fed81de3620069df19e08d40efa5c3ddaaa403b6c1024"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Kezdetben teremté Isten az eget és a földet.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Hungarian/holybible.db"
+      }
+    },
+    {
+      "id": "61d524c5-ecb5-046a-3dbf-7e4974572815",
+      "language": "Hungarian",
+      "translation": {
+        "name": "Karoli Bible (Karoli Gaspar / Vizsolyi Biblia)",
+        "key": "hun_karoli",
+        "year_published": 1590,
+        "year_revision": 1908,
+        "publisher": "Karoli Gaspar; 1908 revision by the Hungarian Bible Society",
+        "description": "First complete Hungarian Bible, originally published 1590 in Vizsoly. The 1908 revised edition is the most commonly redistributed public-domain Hungarian Protestant Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/61d524c5-ecb5-046a-3dbf-7e4974572815.db",
+        "original_filename": "Karoli.db",
+        "format": "sqlite3",
+        "size_bytes": 4739072,
+        "sha256": "61d524c5ecb5046a3dbf7e4974572815f6831813282f8d62a0ac15829d974b34"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Kezdetben teremté Isten az eget és a földet.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "e7956a19-2074-677e-56fc-8122ec68b1bf",
+      "language": "Indonesian",
+      "translation": {
+        "name": "Alkitab Terjemahan Baru (TB)",
+        "key": "id_tb1974",
+        "year_published": 1974,
+        "year_revision": 1994,
+        "publisher": "Lembaga Alkitab Indonesia (LAI)",
+        "description": "Standard modern Indonesian Bible by LAI, first released 1974 with later revisions. Most widely used Protestant and Catholic Bible in Indonesia."
+      },
+      "license": {
+        "name": "Copyrighted (LAI)",
+        "status": "copyrighted",
+        "url": "https://alkitab.sabda.org/copyright.php"
+      },
+      "file": {
+        "path": "bibles/e7956a19-2074-677e-56fc-8122ec68b1bf.db",
+        "original_filename": "Terjemahan Baru (1994).db",
+        "format": "sqlite3",
+        "size_bytes": 5275648,
+        "sha256": "e7956a192074677e56fc8122ec68b1bfadd6dc3bccc11b0c41b3b124ecad0171"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Pada mulanya Allah menciptakan langit dan bumi.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "cdca10df-1b77-02a9-7ff3-0f367d39da06",
+      "language": "Indonesian",
+      "translation": {
+        "name": "Terjemahan Lama (Indonesian Old Translation / Klinkert-Bode)",
+        "key": "ind_terj_lama",
+        "year_published": 1879,
+        "year_revision": 1958,
+        "publisher": "Netherlands Bible Society",
+        "description": "Classical Malay/Indonesian Bible from Klinkert's 1879 translation and Bode's 1938 NT, published together by NBG in 1958. The standard public-domain Indonesian Bible predating the copyrighted Terjemahan Baru."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/cdca10df-1b77-02a9-7ff3-0f367d39da06.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 5744640,
+        "sha256": "cdca10df1b7702a97ff30f367d39da060c28be4f0a7c75394b3b0b2c40809559"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31104,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Pada mulanya Allah menciptakan langit dan bumi.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Indonesian/holybible.db"
+      }
+    },
+    {
+      "id": "2c00897b-d2aa-71af-412f-c92abb93f145",
+      "language": "Indonesian",
+      "translation": {
+        "name": "Terjemahan Lama (Indonesian Old Translation / Klinkert-Bode)",
+        "key": "ind_terj_lama",
+        "year_published": 1879,
+        "year_revision": 1958,
+        "publisher": "Netherlands Bible Society",
+        "description": "Classical Malay/Indonesian Bible from Klinkert's 1879 translation and Bode's 1938 NT, published together by NBG in 1958. The standard public-domain Indonesian Bible predating the copyrighted Terjemahan Baru."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/2c00897b-d2aa-71af-412f-c92abb93f145.db",
+        "original_filename": "Terjemahan Lama.db",
+        "format": "sqlite3",
+        "size_bytes": 5763072,
+        "sha256": "2c00897bd2aa71af412fc92abb93f1453915a6fb57409d452e0cee1ece3d447c"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Bahwa pada mula pertama dijadikan Allah akan langit dan bumi.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "992358c9-1369-107e-010c-ee4d428ab753",
+      "language": "Italian",
+      "translation": {
+        "name": "La Sacra Bibbia, tradotta da Giovanni Diodati (1649)",
+        "key": "diodati_1649",
+        "year_published": 1607,
+        "year_revision": 1649,
+        "publisher": "Giovanni Diodati (Geneva)",
+        "description": "Italian Protestant translation by Giovanni Diodati, first published 1607 and revised 1649; the standard Italian Protestant Bible for centuries.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Giovanni_Diodati"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/992358c9-1369-107e-010c-ee4d428ab753.db",
+        "original_filename": "Diodati (1649).db",
+        "format": "sqlite3",
+        "size_bytes": 4894720,
+        "sha256": "992358c91369107e010cee4d428ab7538d46f656c8d32ba1ad466fc1e4f048fb"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "NEL principio Iddio creò il cielo e la terra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d16fecb5-78fb-495f-e019-1a1d5bca3d85",
+      "language": "Japanese",
+      "translation": {
+        "name": "口語訳聖書 (Kougo-yaku Seisho, Japanese Colloquial Bible)",
+        "key": "ja_kougo",
+        "year_published": 1955,
+        "year_revision": 1955,
+        "publisher": "Japan Bible Society (日本聖書協会)",
+        "description": "First modern colloquial Japanese Bible; NT 1954, OT 1955. Introduced contemporary spoken Japanese to replace the classical bungo style."
+      },
+      "license": {
+        "name": "Copyrighted (Japan Bible Society)",
+        "status": "copyrighted",
+        "url": "https://www.bible.or.jp/"
+      },
+      "file": {
+        "path": "bibles/d16fecb5-78fb-495f-e019-1a1d5bca3d85.db",
+        "original_filename": "Kougo-yaku (1954-1955).db",
+        "format": "sqlite3",
+        "size_bytes": 5943296,
+        "sha256": "d16fecb578fb495fe0191a1d5bca3d858a4b2dc48c99d4172cb9af7e2b4b63a3"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31101,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ はじめに神は天と地とを創造された。",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "4c9bd527-ca28-bcf4-77e0-80752438a09f",
+      "language": "Japanese",
+      "translation": {
+        "name": "文語訳聖書 (Bungo-yaku Seisho)",
+        "key": "ja_bungo",
+        "year_published": 1950,
+        "year_revision": 1953,
+        "publisher": "Japan Bible Society (日本聖書協会)",
+        "description": "Classical literary Japanese Bible combining the Meiji-yaku Old Testament and the Taisho Revised New Testament, reissued by the Japan Bible Society in the early 1950s. Written in bungo (classical literary Japanese)."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/4c9bd527-ca28-bcf4-77e0-80752438a09f.db",
+        "original_filename": "Bungo-yaku: Taisho-kaiyaku (NT) (1950), Meiji-yaku (OT) (1953) (1950-1953).db",
+        "format": "sqlite3",
+        "size_bytes": 4829184,
+        "sha256": "4c9bd527ca28bcf477e080752438a09ff7da6415a7c0526e32fbd8facfb51124"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31075,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ 元始に神天地を創造たまへり",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "db9d831f-db86-00e6-202d-0fc099534d9d",
+      "language": "Kannada",
+      "translation": {
+        "name": "Kannada Bible Old Version (Pavitra Grantha)",
+        "key": "kan_ov",
+        "year_published": 1865,
+        "year_revision": 1934,
+        "publisher": "Bible Society of India (LMS, Wesleyan Mission, Basel Mission)",
+        "description": "Classical Kannada Protestant Bible, first completed 1865 and most widely circulated in its 1934 revised edition. The standard 'Old Version' Kannada Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/db9d831f-db86-00e6-202d-0fc099534d9d.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 13687808,
+        "sha256": "db9d831fdb8600e6202d0fc099534d9d1bedf1d5bfc3f1beb4fe71bafa678945"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ಆದಿಯಲ್ಲಿ ದೇವರು ಆಕಾಶವನ್ನೂ ಭೂಮಿಯನ್ನೂ ಸೃಷ್ಟಿಸಿದನು.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Kannada/holybible.db"
+      }
+    },
+    {
+      "id": "f15365c4-bfe0-4d42-0417-431793ae5eb5",
+      "language": "Kannada",
+      "translation": {
+        "name": "Kannada Bible Old Version (Pavitra Grantha)",
+        "key": "kan_ov",
+        "year_published": 1865,
+        "year_revision": 1934,
+        "publisher": "Bible Society of India (LMS, Wesleyan Mission, Basel Mission)",
+        "description": "Classical Kannada Protestant Bible, first completed 1865 and most widely circulated in its 1934 revised edition. The standard 'Old Version' Kannada Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/f15365c4-bfe0-4d42-0417-431793ae5eb5.db",
+        "original_filename": "Kannada.db",
+        "format": "sqlite3",
+        "size_bytes": 11366400,
+        "sha256": "f15365c4bfe04d420417431793ae5eb57321f1632d29e6e98c674174069c9045"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ಆದಿಯಲ್ಲಿ ದೇವರು ಆಕಾಶವನ್ನೂ ಭೂಮಿಯನ್ನೂ ಸೃಷ್ಟಿಸಿದನು.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "ba693b0a-9ded-1d5b-192f-27d3f9304696",
+      "language": "Korean",
+      "translation": {
+        "name": "개역한글판 성경 (Gaeyeok Hangul, Korean Revised Version)",
+        "key": "ko_krv",
+        "year_published": 1938,
+        "year_revision": 1961,
+        "publisher": "Korean Bible Society (대한성서공회)",
+        "description": "Standard older Korean Protestant Bible, originally 1938 with modernized Hangul orthography in 1961. The dominant Korean Bible throughout the 20th century."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/ba693b0a-9ded-1d5b-192f-27d3f9304696.db",
+        "original_filename": "Korean.db",
+        "format": "sqlite3",
+        "size_bytes": 5062656,
+        "sha256": "ba693b0a9ded1d5b192f27d3f9304696c8c0fe83afd7d6ee077dc9689f100372"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "태초에 하나님이 천지를 창조하시니라 !",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7ff9cba9-633d-f4a8-6983-f6084312495a",
+      "language": "Malayalam",
+      "translation": {
+        "name": "Satyavedapusthakam 1910 (Malayalam Old Version Bible)",
+        "key": "mal_sat_1910",
+        "year_published": 1910,
+        "publisher": "British and Foreign Bible Society / Bible Society of India",
+        "description": "Standard Malayalam Bible refined from Benjamin Bailey's 1829 NT and completed by a Bible Society committee. Most widely used Malayalam Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/7ff9cba9-633d-f4a8-6983-f6084312495a.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 14756864,
+        "sha256": "7ff9cba9633df4a86983f6084312495a25367eed7459f2c54e8f33e2c3f33d83"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31105,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ആദിയിൽ ദൈവം ആകാശവും ഭൂമിയും സൃഷ്ടിച്ചു.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Malayalam/holybible.db"
+      }
+    },
+    {
+      "id": "781bb7ea-1cd4-894c-3db6-bebd4cddb5e8",
+      "language": "Malayalam",
+      "translation": {
+        "name": "Satyavedapusthakam 1910 (Malayalam Old Version Bible)",
+        "key": "mal_sat_1910",
+        "year_published": 1910,
+        "publisher": "British and Foreign Bible Society / Bible Society of India",
+        "description": "Standard Malayalam Bible refined from Benjamin Bailey's 1829 NT and completed by a Bible Society committee. Most widely used Malayalam Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/781bb7ea-1cd4-894c-3db6-bebd4cddb5e8.db",
+        "original_filename": "malayalam.db",
+        "format": "sqlite3",
+        "size_bytes": 12152832,
+        "sha256": "781bb7ea1cd4894c3db6bebd4cddb5e8bdd0ee8ce76856b7181a7304fef9441d"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31105,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ആദിയിൽ ദൈവം ആകാശവും ഭൂമിയും സൃഷ്ടിച്ചു.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d18df04d-68ce-ffe0-33ec-daafb9737c12",
+      "language": "Maori",
+      "translation": {
+        "name": "Te Paipera Tapu (Maori Bible)",
+        "key": "mi_paipera",
+        "year_published": 1868,
+        "year_revision": 1952,
+        "publisher": "Bible Society of New Zealand",
+        "description": "Complete Maori Bible, first published 1868 (translation led by Robert Maunsell and William Williams) and revised 1952."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/d18df04d-68ce-ffe0-33ec-daafb9737c12.db",
+        "original_filename": "Maori Bible.db",
+        "format": "sqlite3",
+        "size_bytes": 5042176,
+        "sha256": "d18df04d68ceffe033ecdaafb9737c120fe85f0a07cd135dc91c0a7193e0fa97"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ He mea hanga na te atua i te timatanga te rangi me te whenua.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "cd032df8-7432-01af-cf43-09e30d91baac",
+      "language": "Nepali",
+      "translation": {
+        "name": "Pavitra Bible - Nepali Revised Version",
+        "key": "nep_pavitra_rv",
+        "year_published": 1914,
+        "year_revision": 1977,
+        "publisher": "Bible Society of India (Ganga Prasad Pradhan / Calcutta Auxiliary)",
+        "description": "Traces back to Ganga Prasad Pradhan's 1914 OT translation; complete Bible released by BSI in 1977. The historic public-domain Nepali Bible commonly distributed as 'Pavitra Bible'."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/cd032df8-7432-01af-cf43-09e30d91baac.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 16259072,
+        "sha256": "cd032df8743201afcf4309e30d91baaca226df8472a21ef9ad4aa8455970f845"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "आरम्भमा परमेश्वरले आकाश र पृथ्वी सृष्टि गर्नु भयो।",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Nepali/holybible.db"
+      }
+    },
+    {
+      "id": "e596ce7e-c5a0-1b08-c398-d7af5a6bfb33",
+      "language": "Nepali",
+      "translation": {
+        "name": "Pavitra Bible - Nepali Revised Version",
+        "key": "nep_pavitra_rv",
+        "year_published": 1914,
+        "year_revision": 1977,
+        "publisher": "Bible Society of India (Ganga Prasad Pradhan / Calcutta Auxiliary)",
+        "description": "Traces back to Ganga Prasad Pradhan's 1914 OT translation; complete Bible released by BSI in 1977. The historic public-domain Nepali Bible commonly distributed as 'Pavitra Bible'."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/e596ce7e-c5a0-1b08-c398-d7af5a6bfb33.db",
+        "original_filename": "Nepali.db",
+        "format": "sqlite3",
+        "size_bytes": 13246464,
+        "sha256": "e596ce7ec5a01b08c398d7af5a6bfb3348337ac181a4bab48708b823330af9e5"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "आरम्भमा परमेश्वरले आकाश र पृथ्वी सृष्टि गर्नु भयो।",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "917ea74e-93b3-9cec-aa7d-2bd20ffd8af0",
+      "language": "Oriya",
+      "translation": {
+        "name": "Oriya / Odia Bible (BSI Old Version)",
+        "key": "ori_ov",
+        "year_published": 1815,
+        "year_revision": 1924,
+        "publisher": "Serampore Mission Press / Bible Society of India",
+        "description": "Classic Odia Bible originally translated by William Carey and the Serampore missionaries (1815); revised by BSI. The most widely distributed Odia Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/917ea74e-93b3-9cec-aa7d-2bd20ffd8af0.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 15867904,
+        "sha256": "917ea74e93b39cecaa7d2bd20ffd8af071d5ab392a32f3a9934e484ea79c5c3d"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ଆରମ୍ଭରେ ପରମେଶ୍ବର ଆକାଶ ଓ ପୃଥିବୀକୁ ସୃଷ୍ଟି କଲେ।",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Oriya/holybible.db"
+      }
+    },
+    {
+      "id": "68328869-ac5b-e22f-342a-8025fec169f2",
+      "language": "Oriya",
+      "translation": {
+        "name": "Oriya / Odia Bible (BSI Old Version)",
+        "key": "ori_ov",
+        "year_published": 1815,
+        "year_revision": 1924,
+        "publisher": "Serampore Mission Press / Bible Society of India",
+        "description": "Classic Odia Bible originally translated by William Carey and the Serampore missionaries (1815); revised by BSI. The most widely distributed Odia Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/68328869-ac5b-e22f-342a-8025fec169f2.db",
+        "original_filename": "Oriya.db",
+        "format": "sqlite3",
+        "size_bytes": 12947456,
+        "sha256": "68328869ac5be22f342a8025fec169f218971b7280bb994d7971dbb6a89ef5fe"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ଆରମ୍ଭରେ ପରମେଶ୍ବର ଆକାଶ ଓ ପୃଥିବୀକୁ ସୃଷ୍ଟି କଲେ।",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "e21dbabe-8e27-8e09-c35c-10214099e2f7",
+      "language": "Persian",
+      "translation": {
+        "name": "Old Persian Version (ترجمه قدیم فارسی)",
+        "key": "old_persian",
+        "year_published": 1895,
+        "publisher": "British and Foreign Bible Society",
+        "description": "Classical Persian/Farsi Bible; NT by Henry Martyn (1812), OT completed by Robert Bruce and BFBS by 1895. The standard Persian Bible for over a century."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/e21dbabe-8e27-8e09-c35c-10214099e2f7.db",
+        "original_filename": "Old Persian Translation (1895).db",
+        "format": "sqlite3",
+        "size_bytes": 7233536,
+        "sha256": "e21dbabe8e278e09c35c10214099e2f7f84828548f40d5f77e69ec142f2029b7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "﻿در ابتدا، خدا آسمانها و زمین‌ را آفرید.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d324834b-2803-d046-26d8-4e6ac0190493",
+      "language": "Polish",
+      "translation": {
+        "name": "Biblia Gdańska",
+        "key": "polbg",
+        "year_published": 1632,
+        "publisher": "Andreas Hünefeld, Gdańsk",
+        "description": "Polish Protestant Bible published in Gdańsk in 1632, prepared primarily by Daniel Mikołajewski; standard Polish Protestant Bible for nearly three centuries."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/d324834b-2803-d046-26d8-4e6ac0190493.db",
+        "original_filename": "polbg.db",
+        "format": "sqlite3",
+        "size_bytes": 4554752,
+        "sha256": "d324834b2803d04626d84e6ac0190493777de1a1cca9468e1b726c783a3e9373"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "﻿Na początku stworzył Bóg niebo i ziemię.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "99eb6568-e26c-c0fc-a7e5-4e9255a86ed7",
+      "language": "Polish",
+      "translation": {
+        "name": "Nowa Biblia Gdańska",
+        "key": "pol_nbg",
+        "year_published": 2012,
+        "publisher": "Śląskie Towarzystwo Biblijne (Silesian Bible Society)",
+        "description": "Modern Polish Bible (1994-2012) by the Silesian Bible Society, from the Masoretic Hebrew and Greek Textus Receptus; placed in the public domain."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain",
+        "url": "https://www.biblest.com.pl/"
+      },
+      "file": {
+        "path": "bibles/99eb6568-e26c-c0fc-a7e5-4e9255a86ed7.db",
+        "original_filename": "pol_nbg.db",
+        "format": "sqlite3",
+        "size_bytes": 4575232,
+        "sha256": "99eb6568e26cc0fca7e54e9255a86ed70304af0353e3e00c15edb49945f841c9"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31162,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Na początku Bóg stworzył niebiosa i ziemię.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "f95f8e08-d4f2-cc3e-2d09-dedbda04a111",
+      "language": "Polish",
+      "translation": {
+        "name": "Uwspółcześniona Biblia Gdańska",
+        "key": "pol_ubg",
+        "year_published": 2017,
+        "publisher": "Fundacja Wrota Nadziei, Toruń",
+        "description": "Modernized Polish revision of the 1632 Biblia Gdańska based on the Textus Receptus, completed 2017 by Wrota Nadziei."
+      },
+      "license": {
+        "name": "Free for non-commercial use",
+        "status": "permissive",
+        "url": "https://wrotanadziei.org/"
+      },
+      "file": {
+        "path": "bibles/f95f8e08-d4f2-cc3e-2d09-dedbda04a111.db",
+        "original_filename": "pol_ubg.db",
+        "format": "sqlite3",
+        "size_bytes": 4444160,
+        "sha256": "f95f8e08d4f2cc3e2d09dedbda04a111cd43a496c8732df593ef5ec5edaab504"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Na początku Bóg stworzył niebo i ziemię.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "081e36b2-7f21-29b6-6737-d8a8e61fb13c",
+      "language": "Portuguese",
+      "translation": {
+        "name": "Bíblia Livre (BLIVRE)",
+        "key": "biblia_livre",
+        "year_published": 2018,
+        "year_revision": 2019,
+        "publisher": "Projeto Bíblia Livre",
+        "description": "Modern Brazilian Portuguese Bible derived from the public-domain Almeida Revista e Corrigida tradition, updated to contemporary Portuguese and released to the public domain."
+      },
+      "license": {
+        "name": "Public Domain (CC0)",
+        "status": "public_domain",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "file": {
+        "path": "bibles/081e36b2-7f21-29b6-6737-d8a8e61fb13c.db",
+        "original_filename": "Biblia Livre.db",
+        "format": "sqlite3",
+        "size_bytes": 4444160,
+        "sha256": "081e36b27f2129b66737d8a8e61fb13cc443d2cf654381570a168ed68166f4f7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ No princípio criou Deus os céus e a terra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "6db1726d-6999-b39d-7f21-f39380ad5706",
+      "language": "Portuguese",
+      "translation": {
+        "name": "Sagradas Escrituras (Versão Antiga, 1569)",
+        "key": "sagradas_escrituras",
+        "year_published": 1569,
+        "publisher": "Casiodoro de Reina lineage; Portuguese rendering in public domain",
+        "description": "Iberian Bible edition tracing to the 1569 Reina (Biblia del Oso) tradition; commonly distributed in Portuguese digital collections as the Sagradas Escrituras Versão Antiga."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/6db1726d-6999-b39d-7f21-f39380ad5706.db",
+        "original_filename": "sagradas.db",
+        "format": "sqlite3",
+        "size_bytes": 4616192,
+        "sha256": "6db1726d6999b39d7f21f39380ad5706e8b14e1fce690deb240c5d030fbb9052"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ En el principio creó Dios los cielos y la tierra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "591ce7b6-8e5a-be47-5f6a-7b1dc7d4e5d4",
+      "language": "Portuguese",
+      "translation": {
+        "name": "Tradução de João Ferreira de Almeida, Revista e Atualizada (ARA)",
+        "key": "almeida_ra",
+        "year_published": 1959,
+        "year_revision": 1993,
+        "publisher": "Sociedade Bíblica do Brasil (SBB)",
+        "description": "Brazilian Bible Society revision of Almeida (NT 1959, complete 1993) in updated Brazilian Portuguese using modern critical texts."
+      },
+      "license": {
+        "name": "Copyrighted (SBB)",
+        "status": "copyrighted",
+        "url": "https://www.sbb.org.br/"
+      },
+      "file": {
+        "path": "bibles/591ce7b6-8e5a-be47-5f6a-7b1dc7d4e5d4.db",
+        "original_filename": "Tradução de João Ferreira de Almeida (Versão Revista e Atualizada).db",
+        "format": "sqlite3",
+        "size_bytes": 4468736,
+        "sha256": "591ce7b68e5abe475f6a7b1dc7d4e5d484e734144456c35b7e103b690b4ea1a5"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ No princípio criou Deus os céus e a terra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "e11e215b-823f-6b9b-4b0f-4bd7474f5020",
+      "language": "Portuguese",
+      "translation": {
+        "name": "Tradução de João Ferreira de Almeida, Revista e Corrigida (ARC)",
+        "key": "almeida_rc",
+        "year_published": 1898,
+        "year_revision": 2009,
+        "publisher": "Sociedade Bíblica do Brasil / Sociedade Bíblica de Portugal",
+        "description": "Classical revision of Almeida based on the Textus Receptus, first published in its Revista e Corrigida form in 1898. Pre-1948 editions are public domain."
+      },
+      "license": {
+        "name": "Public Domain (older) / Copyrighted (modern revisions)",
+        "status": "public_domain",
+        "url": "https://www.sbb.org.br/"
+      },
+      "file": {
+        "path": "bibles/e11e215b-823f-6b9b-4b0f-4bd7474f5020.db",
+        "original_filename": "Tradução de João Ferreira de Almeida Revista e Corrigida.db",
+        "format": "sqlite3",
+        "size_bytes": 4476928,
+        "sha256": "e11e215b823f6b9b4b0f4bd7474f50202d3b8c223104f064e48d3bc928f22e22"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ No princípio, criou Deus os céus e a terra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "018fe22e-00a2-264b-1e2c-a27728f007cc",
+      "language": "Punjabi",
+      "translation": {
+        "name": "Punjabi Bible (BSI Old Version)",
+        "key": "pan_ov",
+        "year_published": 1868,
+        "year_revision": 1959,
+        "publisher": "British and Foreign Bible Society / Bible Society of India",
+        "description": "Traditional Punjabi (Gurmukhi script) Bible translated under BFBS and revised by BSI. The most commonly distributed Punjabi Scripture."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/018fe22e-00a2-264b-1e2c-a27728f007cc.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 16589824,
+        "sha256": "018fe22e00a2264b1e2ca27728f007cc2f8720afb84ce639cbbf027498767e9e"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 30750,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ਦੁਨੀਆਂ ਦੀ ਸ਼ੁਰੂਆਤ ਪਰਮੇਸ਼ੁਰ ਨੇ ਅਕਾਸ਼ ਤੇ ਧਰਤੀ ਨੂੰ ਸਾਜਿਆ।",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Punjabi/holybible.db"
+      }
+    },
+    {
+      "id": "a3088597-31e3-3fef-3bf5-48cb1884c7c5",
+      "language": "Romanian",
+      "translation": {
+        "name": "Biblia Fidela (Traducerea Fidela)",
+        "key": "fidela_2016",
+        "year_published": 2011,
+        "year_revision": 2016,
+        "publisher": "Editura Lampadarul de Aur (Cluj-Napoca)",
+        "description": "Romanian Bible based on the Textus Receptus and the King James tradition, published 2011 with revisions through 2016."
+      },
+      "license": {
+        "name": "Copyrighted (free distribution permitted)",
+        "status": "copyrighted"
+      },
+      "file": {
+        "path": "bibles/a3088597-31e3-3fef-3bf5-48cb1884c7c5.db",
+        "original_filename": "Fidela Biblia în limba română (2011-2016).db",
+        "format": "sqlite3",
+        "size_bytes": 4907008,
+        "sha256": "a308859731e33fef3bf548cb1884c7c52b65b339444b380da81f5d591aaf4ae4"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ La început Dumnezeu a creat cerul şi pământul.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "0abb6cd9-60de-6e78-ee5a-b0210c52e241",
+      "language": "Romanian",
+      "translation": {
+        "name": "Biblia sau Sfânta Scriptură - traducerea Dumitru Cornilescu",
+        "key": "cornilescu",
+        "year_published": 1921,
+        "year_revision": 1924,
+        "publisher": "British and Foreign Bible Society",
+        "description": "Most widely used Romanian Protestant Bible, by Dumitru Cornilescu (1921, revised 1924). The original 1924 edition is in the public domain."
+      },
+      "license": {
+        "name": "Public Domain (1924 edition)",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/0abb6cd9-60de-6e78-ee5a-b0210c52e241.db",
+        "original_filename": "Cornilescu.db",
+        "format": "sqlite3",
+        "size_bytes": 4808704,
+        "sha256": "0abb6cd960de6e78ee5ab0210c52e241c85ab0991ace72c4a19eddc2eca6f23f"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "La început, Dumnezeu a făcut cerurile şi pămîntul.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "2cba43d0-1d57-2db7-3fb9-e80717fcac24",
+      "language": "Russian",
+      "translation": {
+        "name": "Синодальный перевод (Russian Synodal Bible)",
+        "key": "rusv",
+        "year_published": 1876,
+        "publisher": "Holy Synod of the Russian Orthodox Church",
+        "description": "Authorized Russian translation completed 1876 from the Masoretic Text and Greek Septuagint/NT; the most widely used Russian Bible across Orthodox, Catholic, and Protestant communities."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/2cba43d0-1d57-2db7-3fb9-e80717fcac24.db",
+        "original_filename": "Synodal (1876).db",
+        "format": "sqlite3",
+        "size_bytes": 6713344,
+        "sha256": "2cba43d01d572db73fb9e80717fcac24ac0ef233b9be1d3a4b2cc6b7478079fa"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "В начале сотворил Бог небо и землю.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "7319469a-dcab-7350-1e7c-88201b8f7d0e",
+      "language": "Sepedi",
+      "translation": {
+        "name": "Bibele ye Halalelago / Northern Sotho (Sepedi) Bible",
+        "key": "nso_bibele",
+        "year_published": 1904,
+        "year_revision": 1951,
+        "publisher": "Berlin Missionary Society / Bible Society of South Africa",
+        "description": "Northern Sotho (Sepedi) Bible translated by Berlin Missionary Society missionaries (notably Karl Endemann and Abraham Serote); complete Bible 1904, later revised."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/7319469a-dcab-7350-1e7c-88201b8f7d0e.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 5752832,
+        "sha256": "7319469adcab73501e7c88201b8f7d0e0a567970f8e0e7d0dd7729988af8c78b"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31067,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Mathomong Modimo o hlodile magodimo le lefase.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Sepedi/holybible.db"
+      }
+    },
+    {
+      "id": "28ee9e76-99bc-a052-c4f5-ad4ae8efa783",
+      "language": "Spanish",
+      "translation": {
+        "name": "Reina-Valera 1858 (Nuevo Testamento)",
+        "key": "rv_1858",
+        "year_published": 1858,
+        "year_revision": 1858,
+        "publisher": "Sociedad Bíblica Británica y Extranjera",
+        "description": "19th-century revision of the Spanish Reina-Valera (principally the NT) by Lorenzo Lucena Pedrosa, published by BFBS.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Reina-Valera"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/28ee9e76-99bc-a052-c4f5-ad4ae8efa783.db",
+        "original_filename": "rv_1858.db",
+        "format": "sqlite3",
+        "size_bytes": 1069056,
+        "sha256": "28ee9e7699bca052c4f5ad4ae8efa783400563a306efd8e652a0fe5112e9c1a7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 7957,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "LIBRO de la generacion de Jesu-Cristo, hijo de David, hijo de Abraham.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "c9d4dde3-93dd-92e3-db42-746006145dc7",
+      "language": "Spanish",
+      "translation": {
+        "name": "Reina-Valera 1909",
+        "key": "rv_1909",
+        "year_published": 1569,
+        "year_revision": 1909,
+        "publisher": "Sociedades Bíblicas Unidas",
+        "description": "1909 revision of the classic Spanish Reina-Valera (Reina 1569 / Valera 1602). Public domain and widely used in the Spanish Protestant world.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Reina-Valera"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/c9d4dde3-93dd-92e3-db42-746006145dc7.db",
+        "original_filename": "rv_1909.db",
+        "format": "sqlite3",
+        "size_bytes": 4468736,
+        "sha256": "c9d4dde393dd92e3db42746006145dc71eec7bb1e33322e08f2e9ec409da820f"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "EN el principio crió Dios los cielos y la tierra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "8caf8ddd-1f6a-cf66-0a57-1e069aae480b",
+      "language": "Spanish",
+      "translation": {
+        "name": "Reina-Valera 1909 with Strong's Numbers",
+        "key": "rv_1909_strongs",
+        "year_published": 1909,
+        "year_revision": 1909,
+        "publisher": "Sociedades Bíblicas Unidas; Strong's numbering by James Strong",
+        "description": "RV 1909 Spanish Bible tagged with Strong's numbers linking words to Hebrew and Greek originals.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Reina-Valera"
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/8caf8ddd-1f6a-cf66-0a57-1e069aae480b.db",
+        "original_filename": "rv_1909_strongs.db",
+        "format": "sqlite3",
+        "size_bytes": 7364608,
+        "sha256": "8caf8ddd1f6acf660a571e069aae480b7fc7707194c5a52ed82ba46d285fce8f"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31103,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "EN el principio{H7225} crió{H1254} Dios{H430} los cielos{H8064} y la tierra{H776}.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "5de6824a-c1e0-c512-dc10-49df85e33ec2",
+      "language": "Spanish",
+      "translation": {
+        "name": "Reina-Valera-Gomez",
+        "key": "rvg",
+        "year_published": 2004,
+        "year_revision": 2010,
+        "publisher": "Iglesia Bautista Libertad / Humberto Gómez Caballero",
+        "description": "Modern revision of the Spanish Reina-Valera by Humberto Gómez Caballero, aligned with the Textus Receptus and KJV tradition.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Reina-Valera"
+      },
+      "license": {
+        "name": "Copyrighted (free distribution permitted)",
+        "status": "copyrighted",
+        "url": "https://rvg-spanishbible.org/"
+      },
+      "file": {
+        "path": "bibles/5de6824a-c1e0-c512-dc10-49df85e33ec2.db",
+        "original_filename": "rvg.db",
+        "format": "sqlite3",
+        "size_bytes": 4530176,
+        "sha256": "5de6824ac1e0c512dc1049df85e33ec2211a322a869dacd9e9738dd7843be50e"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "En el principio creó Dios el cielo y la tierra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "8ea9c1e3-067a-f499-b2ef-d04dff9a7776",
+      "language": "Spanish",
+      "translation": {
+        "name": "Reina-Valera-Gomez 2004",
+        "key": "rvg_2004",
+        "year_published": 2004,
+        "year_revision": 2004,
+        "publisher": "Iglesia Bautista Libertad / Humberto Gómez Caballero",
+        "description": "Original 2004 edition of the Reina-Valera-Gomez Spanish Bible, aligned with the Textus Receptus.",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Reina-Valera"
+      },
+      "license": {
+        "name": "Copyrighted (free distribution permitted)",
+        "status": "copyrighted",
+        "url": "https://rvg-spanishbible.org/"
+      },
+      "file": {
+        "path": "bibles/8ea9c1e3-067a-f499-b2ef-d04dff9a7776.db",
+        "original_filename": "rvg_2004.db",
+        "format": "sqlite3",
+        "size_bytes": 4489216,
+        "sha256": "8ea9c1e3067af499b2efd04dff9a77766fb0201dbc959b2b5f2a3e105e6b9ec0"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "En el principio creó Dios los cielos y la tierra.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "97de6a1d-9ae6-f012-a4b2-bad3f0f53039",
+      "language": "Swahili",
+      "translation": {
+        "name": "Swahili Union New Testament (Agano Jipya)",
+        "key": "swahili_nt",
+        "year_published": 1909,
+        "year_revision": 1952,
+        "publisher": "British and Foreign Bible Society / Bible Society of Tanzania",
+        "description": "Standardized East African Swahili NT (Mombasa/Zanzibar collaboration); the standard Protestant Swahili Bible across East Africa."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/97de6a1d-9ae6-f012-a4b2-bad3f0f53039.db",
+        "original_filename": "Swahili NT.db",
+        "format": "sqlite3",
+        "size_bytes": 1073152,
+        "sha256": "97de6a1d9ae6f012a4b2bad3f0f530396ac1aa653434a29283edf068b175230a"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 7853,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Yesu Kristo alikuwa mzawa wa Daudi, mzawa wa Abrahamu. Hii ndiyo orodha ya ukoo wake:",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "e1659ab1-a16d-ce58-248c-4b7d6a1e0e54",
+      "language": "Tagalog",
+      "translation": {
+        "name": "Ang Biblia (1905)",
+        "key": "tgl_ab1905",
+        "year_published": 1905,
+        "publisher": "Philippine Bible Society / American Bible Society",
+        "description": "First complete Protestant Tagalog Bible (1905), produced under the auspices of the American Bible Society."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/e1659ab1-a16d-ce58-248c-4b7d6a1e0e54.db",
+        "original_filename": "Tagalog Ang Biblia (1905).db",
+        "format": "sqlite3",
+        "size_bytes": 5455872,
+        "sha256": "e1659ab1a16dce58248c4b7d6a1e0e54100da0217a536246fc49a5370fe138ed"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "¶ Nang pasimula ay nilikha ng Dios ang langit at ang lupa.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "c9ea732b-c029-afd3-6579-b4062af0855c",
+      "language": "Tamil",
+      "translation": {
+        "name": "Tamil Bible - Old Version / Union Version",
+        "key": "tam_ov",
+        "year_published": 1871,
+        "year_revision": 1956,
+        "publisher": "Bible Society of India (Fabricius, Rhenius, and Jaffna/Madras committees)",
+        "description": "Classical Tamil Union Version (the 'Old Version'), first published 1871; the most widely used Tamil Bible among Indian and Sri Lankan Tamil Christians."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/c9ea732b-c029-afd3-6579-b4062af0855c.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 17125376,
+        "sha256": "c9ea732bc029afd36579b4062af0855ce771452b558fa5924a72a763066706e1"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ஆதியிலே தேவன் வானத்தையும் பூமியையும் சிருஷ்டித்தார்.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Tamil/holybible.db"
+      }
+    },
+    {
+      "id": "e1de116a-7321-8a40-ad08-752401590fe9",
+      "language": "Tamil",
+      "translation": {
+        "name": "Tamil Bible - Old Version / Union Version",
+        "key": "tam_ov",
+        "year_published": 1871,
+        "year_revision": 1956,
+        "publisher": "Bible Society of India (Fabricius, Rhenius, and Jaffna/Madras committees)",
+        "description": "Classical Tamil Union Version (the 'Old Version'), first published 1871; the most widely used Tamil Bible among Indian and Sri Lankan Tamil Christians."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/e1de116a-7321-8a40-ad08-752401590fe9.db",
+        "original_filename": "Tamil.db",
+        "format": "sqlite3",
+        "size_bytes": 13766656,
+        "sha256": "e1de116a73218a40ad08752401590fe9db32078f3dcb278fe88a950239c9cbe6"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ஆதியிலே தேவன் வானத்தையும் பூமியையும் சிருஷ்டித்தார்.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "a28f92d4-d185-71ca-8c17-721ebfdda4ad",
+      "language": "Telugu",
+      "translation": {
+        "name": "Telugu Old Version Bible",
+        "key": "tel_ov",
+        "year_published": 1880,
+        "year_revision": 1898,
+        "publisher": "Bible Society of India (John Hay, Lyman Jewett, BFBS committee)",
+        "description": "Standard classical Telugu Bible, completed 1880 and revised 1898; the most widely distributed Telugu Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/a28f92d4-d185-71ca-8c17-721ebfdda4ad.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 13458432,
+        "sha256": "a28f92d4d18571ca8c17721ebfdda4ad112e23b98d8373002b148caf277c5d33"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ఆదియందు దేవుడు భూమ్యాకాశములను సృజించెను.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Telugu/holybible.db"
+      }
+    },
+    {
+      "id": "9245855e-a576-5c4a-89d1-66d4541bae4e",
+      "language": "Telugu",
+      "translation": {
+        "name": "Telugu Old Version Bible",
+        "key": "tel_ov",
+        "year_published": 1880,
+        "year_revision": 1898,
+        "publisher": "Bible Society of India (John Hay, Lyman Jewett, BFBS committee)",
+        "description": "Standard classical Telugu Bible, completed 1880 and revised 1898; the most widely distributed Telugu Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/9245855e-a576-5c4a-89d1-66d4541bae4e.db",
+        "original_filename": "Telugu.db",
+        "format": "sqlite3",
+        "size_bytes": 11223040,
+        "sha256": "9245855ea5765c4a89d166d4541bae4eff820ace6a6ecbc1cc693a94e5060588"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ఆదియందు దేవుడు భూమ్యాకాశములను సృజించెను.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "66f9b41a-068b-a4bf-0a0b-c97c192f7339",
+      "language": "Thai",
+      "translation": {
+        "name": "พระคัมภีร์ไทย ฉบับคิงเจมส์ (Thai King James Version)",
+        "key": "th_kjv",
+        "year_published": 2003,
+        "publisher": "Independent Baptist missions (Thai KJV translation committee)",
+        "description": "Thai-language Bible translated from the English KJV and the Textus Receptus by independent Baptist missionaries; a formal-equivalence Thai counterpart to the KJV."
+      },
+      "license": {
+        "name": "Permissive (free distribution)",
+        "status": "permissive"
+      },
+      "file": {
+        "path": "bibles/66f9b41a-068b-a4bf-0a0b-c97c192f7339.db",
+        "original_filename": "Thai KJV.db",
+        "format": "sqlite3",
+        "size_bytes": 12111872,
+        "sha256": "66f9b41a068ba4bf0a0bc97c192f7339efc00d254dab88009ee3161957b922b7"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "ในเริ่มแรกนั้นพระเจ้าทรงเนรมิตสร้างฟ้าและแผ่นดินโลก",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "d48ef432-fed1-f071-6bd6-9948842ef1ce",
+      "language": "Turkish",
+      "translation": {
+        "name": "Kitabı Mukaddes (Turkish Bible)",
+        "key": "turkish_bible",
+        "year_published": 1878,
+        "year_revision": 1941,
+        "publisher": "Kitabı Mukaddes Şirketi / British and Foreign Bible Society",
+        "description": "Traditional Turkish Bible based on the 1666 Ali Bey manuscript; first published in Ottoman Turkish (1827-1878) and revised into modern Latin-script Turkish in 1941."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/d48ef432-fed1-f071-6bd6-9948842ef1ce.db",
+        "original_filename": "Turkish.db",
+        "format": "sqlite3",
+        "size_bytes": 4268032,
+        "sha256": "d48ef432fed1f0716bd69948842ef1ceac7466f620f99e07f0da9a4cdf551d4c"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 30182,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Başlangıçta Tanrı göğü ve yeri yarattı.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "695a5b8d-e4b4-c700-27b3-bd6215a50e9c",
+      "language": "Vietnamese",
+      "translation": {
+        "name": "Kinh Thánh Tiếng Việt 1934 (Vietnamese Cadman Bible)",
+        "key": "vi_cadman",
+        "year_published": 1926,
+        "year_revision": 1934,
+        "publisher": "British and Foreign Bible Society / Christian and Missionary Alliance",
+        "description": "Traditional Vietnamese Protestant Bible translated under W. C. Cadman with Phan Khôi, completed 1926 and revised 1934. The most widely used traditional Vietnamese Bible."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/695a5b8d-e4b4-c700-27b3-bd6215a50e9c.db",
+        "original_filename": "Vietnamese Cadman (1934).db",
+        "format": "sqlite3",
+        "size_bytes": 5718016,
+        "sha256": "695a5b8de4b4c70027b3bd6215a50e9c3e95b15b11f45a05d11c76dbd29d1760"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Ban đầu Ðức Chúa Trời dựng nên trời đất.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "34aad01a-82e2-36c6-70b9-2821e547d728",
+      "language": "Xhosa",
+      "translation": {
+        "name": "IBhayibhile (Xhosa Bible, Appleyard-Bennie)",
+        "key": "xho_ibhayibhile",
+        "year_published": 1859,
+        "year_revision": 1927,
+        "publisher": "British and Foreign Bible Society / Bible Society of South Africa (J. W. Appleyard)",
+        "description": "Historic Xhosa Bible first completed by John Appleyard in 1859 and revised 1927; the public-domain edition redistributed via Wordproject."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/34aad01a-82e2-36c6-70b9-2821e547d728.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 4652032,
+        "sha256": "34aad01a82e236c670b92821e547d728f3606049f3740d4413abcd9ca6df0eab"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Ekuqalekeni uThixo wadala amazulu nehlabathi.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Xhosa/holybible.db"
+      }
+    },
+    {
+      "id": "743eb182-c8bf-103a-fa13-ce18f06a03f1",
+      "language": "Xhosa",
+      "translation": {
+        "name": "IBhayibhile (Xhosa Bible, Appleyard-Bennie)",
+        "key": "xho_ibhayibhile",
+        "year_published": 1859,
+        "year_revision": 1927,
+        "publisher": "British and Foreign Bible Society / Bible Society of South Africa (J. W. Appleyard)",
+        "description": "Historic Xhosa Bible first completed by John Appleyard in 1859 and revised 1927; the public-domain edition redistributed via Wordproject."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/743eb182-c8bf-103a-fa13-ce18f06a03f1.db",
+        "original_filename": "Xhosa.db",
+        "format": "sqlite3",
+        "size_bytes": 4341760,
+        "sha256": "743eb182c8bf103afa13ce18f06a03f111a93ef3cf64c916b7c49c970450b390"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Ekuqalekeni uThixo wadala amazulu nehlabathi.",
+      "source": {
+        "id": "lighthouse-bibles-main"
+      }
+    },
+    {
+      "id": "57b773ce-8fff-f35b-4ff8-605aa821f6f9",
+      "language": "Zulu",
+      "translation": {
+        "name": "IBhayibheli Eli Ngcwele (Zulu Bible 1959)",
+        "key": "zul_ibhayibheli",
+        "year_published": 1883,
+        "year_revision": 1959,
+        "publisher": "British and Foreign Bible Society / Bible Society of South Africa",
+        "description": "Standard Zulu-language Bible, originally translated in the 19th century and revised 1959. Widely used across Zulu-speaking Christian communities in Southern Africa."
+      },
+      "license": {
+        "name": "Public Domain",
+        "status": "public_domain"
+      },
+      "file": {
+        "path": "bibles/57b773ce-8fff-f35b-4ff8-605aa821f6f9.db",
+        "original_filename": "holybible.db",
+        "format": "sqlite3",
+        "size_bytes": 4612096,
+        "sha256": "57b773ce8ffff35b4ff8605aa821f6f9392ac175013ea1e3ea1261be1e2a6877"
+      },
+      "schema": {
+        "tables": [
+          "bible"
+        ],
+        "verse_table": "bible",
+        "verse_count": 31102,
+        "columns": [
+          "Book",
+          "Chapter",
+          "Versecount",
+          "verse"
+        ]
+      },
+      "sample_verse": "Ekuqaleni uNkulunkulu wadala izulu nomhlaba.",
+      "source": {
+        "id": "kernelguardian-multilingual",
+        "url": "https://github.com/kernelguardian/Bible-Database/blob/master/Zulu/holybible.db"
+      }
+    }
+  ]
+}
